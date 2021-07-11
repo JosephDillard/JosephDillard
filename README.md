@@ -1,4 +1,3 @@
-
 1) ArcGIS System Design
 System Design Strategies - http://www.wiki.gis.com/wiki/index.php/System_Design_Strategies
 ArcGIS Capacity Planning Tool Updates - http://www.wiki.gis.com/wiki/index.php/Capacity_Planning_Tool_updates
@@ -10,7 +9,6 @@ ArcGIS Enterprise in the cloud - https://enterprise.arcgis.com/en/server/latest/
 Layer 4 - https://www.nginx.com/resources/glossary/layer-4-load-balancing/
 Layer 7 - https://www.nginx.com/resources/glossary/layer-7-load-balancing/
 Vertical and Horizontal Scaling Explained - https://www.ibm.com/blogs/cloud-computing/2014/04/09/explain-vertical-horizontal-scaling-cloud/
-
 
 4) AWS Scaling
 AWS Auto Scaling - https://aws.amazon.com/autoscaling/
