@@ -1,18 +1,14 @@
 
 1) ArcGIS System Design
 System Design Strategies - http://www.wiki.gis.com/wiki/index.php/System_Design_Strategies
-
 ArcGIS Capacity Planning Tool Updates - http://www.wiki.gis.com/wiki/index.php/Capacity_Planning_Tool_updates
 
 2) ArcGIS on AWS 
-#ArcGIS Enterprise in the cloud - https://enterprise.arcgis.com/en/server/latest/cloud/amazon/what-is-arcgis-server-on-aws.htm
-#Deploying ArcGIS Enterprise in Amazon Web Services - https://www.youtube.com/watch?v=oXJknnFuKeY&ab_channel=EsriEvents
+ArcGIS Enterprise in the cloud - https://enterprise.arcgis.com/en/server/latest/cloud/amazon/what-is-arcgis-server-on-aws.htm#Deploying ArcGIS Enterprise in Amazon Web Services - https://www.youtube.com/watch?v=oXJknnFuKeY&ab_channel=EsriEvents
 
 3) Load Balancing
 Layer 4 - https://www.nginx.com/resources/glossary/layer-4-load-balancing/
-
 Layer 7 - https://www.nginx.com/resources/glossary/layer-7-load-balancing/
-
 Vertical and Horizontal Scaling Explained - https://www.ibm.com/blogs/cloud-computing/2014/04/09/explain-vertical-horizontal-scaling-cloud/
 
 
@@ -57,14 +53,9 @@ Read sequentially from SSD at 1 GB/s
 Read sequentially from main memory at 4 GB/s
 6-7 world-wide round trips per second
 2,000 round trips per second within a data center
-Latency numbers visualized
 
 
-Source(s) and further reading
-Latency numbers every programmer should know - 1
-Latency numbers every programmer should know - 2
-Designs, lessons, and advice from building large distributed systems
-Software Engineering Advice from Building Large-Scale Distributed Systems
+
 <!---
 JosephDillard/JosephDillard is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
