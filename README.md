@@ -1,3 +1,5 @@
+## MY RANDOM NOTES
+
 1) ArcGIS System Design
 * System Design Strategies - http://www.wiki.gis.com/wiki/index.php/System_Design_Strategies
 * ArcGIS Capacity Planning Tool Updates - http://www.wiki.gis.com/wiki/index.php/Capacity_Planning_Tool_updates
