@@ -1,6 +1,20 @@
 1) ArcGIS System Design
 * System Design Strategies - http://www.wiki.gis.com/wiki/index.php/System_Design_Strategies
 * ArcGIS Capacity Planning Tool Updates - http://www.wiki.gis.com/wiki/index.php/Capacity_Planning_Tool_updates
+* ArcGIS Capacity Planning Tool - Dave Peters has Retired - Unkown if anyone else will take up his efforts on this. 
+* ArcGIS Architecture Series: Tools of an Architect - https://community.esri.com/t5/implementing-arcgis-questions/arcgis-architecture-series-tools-of-an-architect/td-p/22626
+
+a. Questions before design
+What types of data? 
+How many records are in the vector data that will be stored in the database?
+Data pulled into the systems? GIS systems or non GIS data? ETL?
+What kind of users will use this system - ArcGIS Editors in Pro or Desktop? End user are mostly non-GIS users mostly consuming information? Both?
+What types of app or functions will be built to use the system. 
+How much downtime is acceptable? 
+High available? Active - Active or Active - Passive - Two duplicate systems can be use to also increase the amount of users servers but will require twice the license as Active Passive. 
+Geographically distributed system?
+
+
 
 2) ArcGIS on AWS 
 * ArcGIS Enterprise in the cloud - https://enterprise.arcgis.com/en/server/latest/cloud/amazon/what-is-arcgis-server-on-aws.htm
