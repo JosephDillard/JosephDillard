@@ -8,13 +8,16 @@ https://www.youtube.com/watch?v=7xqNyUOIRCs&ab_channel=ComputerHistoryArchivesPr
 
 FREE SATELLITE IMAGERY SOURCES
 Google Earth Pro: https://www.google.co.uk/earth/about/versions/#download-pro
-Sentinel Hub Playground: https://apps.sentinel-hub.com/sentinel-playground/
-Zoom Earth: https://zoom.earth/
-World Imagery Wayback: https://livingatlas.arcgis.com/wayback 
 
+Sentinel Hub Playground: https://apps.sentinel-hub.com/sentinel-playground/
+
+Zoom Earth: https://zoom.earth/
+
+World Imagery Wayback: https://livingatlas.arcgis.com/wayback 
 
 15 Free Satellite Imagery Data Sources: 
 https://gisgeography.com/free-satellite-imagery-data-list/
+
 Free Satellite Imagery Sources: https://eos.com/blog/free-satellite-imagery-sources/
 
 
