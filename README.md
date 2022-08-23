@@ -5,6 +5,11 @@
 https://github.com/JosephDillard/JosephDillard/blob/main/Joseph_Dillard_GIS_Solutions_Architect_22Aug2022.pdf
 
 
+## MY LINKEDIN
+
+
+https://www.linkedin.com/in/joe-dillard-gis-architect
+
 
 ## OTHER LINKS
 
