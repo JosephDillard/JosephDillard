@@ -1,8 +1,12 @@
 
 ## MY RESUME
 
+
 https://github.com/JosephDillard/JosephDillard/blob/main/Joseph_Dillard_GIS_Solutions_Architect_22Aug2022.pdf
 
+
+
+## OTHER LINKS
 
 https://www.instagram.com/josephcdillard/
 
