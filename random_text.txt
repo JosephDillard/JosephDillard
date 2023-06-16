@@ -1,0 +1,195 @@
+Vector Data
+
+GIS stands for Geographic Information System, which is a system designed to capture, store, manipulate, analyze, and present geographically referenced data. In GIS, vector data is one of the two primary types of geospatial data, the other being raster data.
+
+Vector data represents geographic features using points, lines, and polygons. These features can include roads, buildings, rivers, boundaries, and various other objects. Vector data is created by digitizing real-world objects, such as using GPS devices to capture point locations or tracing features on satellite imagery.
+
+There are three main types of vector data:
+
+Points: Points represent individual locations or specific features on the Earth's surface. Each point is defined by its geographic coordinates, typically latitude and longitude. Examples of point data include the location of cities, landmarks, and GPS coordinates of specific sites.
+
+Lines: Lines are used to represent linear features such as roads, rivers, pipelines, and contours. They are defined by a series of connected points, forming a path or route. Lines can have attributes associated with them, such as road names, length, or elevation.
+
+Polygons: Polygons are closed shapes with multiple vertices that represent areas on the Earth's surface. They can be used to represent land parcels, administrative boundaries, lakes, and buildings. Polygons have attributes associated with them, such as area, population, or land use category.
+
+Vector data stores both the geometry of features (points, lines, polygons) and their attributes (such as names, classifications, or numeric values) in separate data tables. This attribute table allows additional information to be associated with each feature, enabling analysis and visualization.
+
+GIS software provides tools to manipulate and analyze vector data. For example, you can perform spatial queries to select features within a specific area, calculate distances between points, measure the length of a road, or determine the area covered by a polygon. Visualization of vector data can be done by creating maps that symbolize and display the features based on their attributes.
+
+Vector data is highly versatile and is widely used in various applications such as urban planning, transportation management, environmental analysis, and resource mapping. It provides a rich representation of spatial features and allows for detailed analysis and decision-making based on geographic relationships.
+
+Raster Data
+
+In GIS (Geographic Information System), raster data is one of the two primary types of geospatial data, alongside vector data. Raster data represents geographic information as a grid of cells or pixels, where each cell corresponds to a specific area on the Earth's surface.
+
+In a raster dataset, each cell contains a value that represents a particular attribute or phenomenon. These values can represent elevation, temperature, precipitation, land cover, satellite imagery intensities, or any other continuous or discrete variable associated with the geographic location.
+
+The key characteristics of raster data include:
+
+Grid structure: Raster data is organized in a grid pattern, where each cell is identified by its row and column position within the grid. The resolution of the grid determines the size of the cells, which can vary from fine-scale resolutions (small cells, capturing more detailed information) to coarse-scale resolutions (larger cells, providing a broader view of the area).
+
+Cell values: Each cell in a raster dataset contains a value representing a specific attribute or measurement. For example, in a digital elevation model (DEM) raster, each cell represents the elevation value at that location. In an aerial imagery raster, the cell values can represent the intensity of reflected light or the color value of a particular band.
+
+Spatial referencing: Raster data includes spatial referencing information, which allows each cell to be associated with a specific geographic location on the Earth's surface. This information is typically stored as metadata and includes details such as coordinate reference system (CRS), extent (geographic coverage), and cell size.
+
+Raster data provides a continuous representation of the Earth's surface, allowing for analysis that takes into account the spatial relationships between cells. GIS software offers various tools and techniques for working with raster data, including querying specific cell values, performing mathematical operations (e.g., interpolation, overlay, and proximity analysis), and creating visualizations such as elevation maps or land cover classifications.
+
+It's worth noting that raster data is particularly suited for representing phenomena that vary continuously across space, such as elevation, temperature, or precipitation. However, it may not be as suitable for representing discrete or categorical features with sharp boundaries (e.g., roads, administrative boundaries), which are better represented using vector data.
+
+In summary, raster data in GIS is a grid-based representation of geographic information where each cell contains a value representing a specific attribute or phenomenon. It is widely used in applications such as terrain analysis, environmental modeling, remote sensing, and spatial analysis.
+
+Geometry
+
+In GIS (Geographic Information System), geometry refers to the spatial characteristics and properties of geographic features. It encompasses the shape, location, and relationship of these features within a geographic space.
+
+Geometry in GIS primarily focuses on two fundamental types: point geometry and vector geometry.
+
+Point Geometry: Point geometry represents individual locations on the Earth's surface. It is defined by a pair of coordinates, typically latitude and longitude or easting and northing. Points are zero-dimensional and have no length or area. They are used to represent specific features such as landmarks, cities, or sampling locations.
+
+Vector Geometry: Vector geometry represents geographic features as lines or polygons. These features can be roads, rivers, boundaries, buildings, or any other objects that can be represented by shapes. Vector geometry has spatial extent and can have length (for lines) or area (for polygons).
+
+Lines: Lines are one-dimensional geometries that connect a series of points. They represent linear features such as roads, rivers, and contours. Lines have length and can have attributes associated with them, such as road names, speed limits, or elevation.
+
+Polygons: Polygons are two-dimensional geometries that enclose an area. They represent closed shapes such as land parcels, administrative boundaries, lakes, or buildings. Polygons are defined by a set of interconnected points, forming a closed loop. They have an area and can have attributes associated with them, such as land use category, population, or zoning regulations.
+
+Geometry in GIS enables the representation, storage, and analysis of geographic features. GIS software provides tools and functions to create, edit, and manipulate geometries, allowing for spatial queries, analysis, and visualization. For example, you can measure the distance between points, calculate the area of a polygon, or find the intersection between two lines.
+
+Geometries in GIS are typically stored in a spatial database or a file format that supports spatial data, such as shapefiles, geodatabases, or spatially enabled databases. These storage formats store both the geometry and the associated attribute data, allowing for integrated analysis and visualization of geographic information.
+
+In summary, geometry in GIS refers to the spatial characteristics and properties of geographic features, including points, lines, and polygons. It plays a crucial role in representing, analyzing, and visualizing spatial data within a GIS environment.
+
+Spaital Index
+
+In GIS (Geographic Information System), a spatial index is a data structure that improves the efficiency and performance of spatial queries and operations on spatial data. It is used to organize and optimize the retrieval of spatial objects based on their spatial relationships.
+
+Spatial indexes are particularly important when working with large datasets containing numerous geographic features, as they can significantly speed up spatial operations and reduce the time required for data retrieval.
+
+The main purpose of a spatial index is to partition the spatial data into smaller, manageable subsets that can be quickly searched and accessed. This is achieved by creating a hierarchical structure that organizes the data based on its spatial characteristics.
+
+There are several types of spatial indexes commonly used in GIS:
+
+Grid Index: A grid index divides the spatial extent of the dataset into a grid of cells. Each cell contains a list of features that intersect or overlap with that cell. It allows for efficient retrieval of features within a specific grid cell or a group of neighboring cells.
+
+R-Tree Index: An R-tree index is a tree-like data structure that hierarchically organizes spatial objects based on their bounding boxes. It recursively partitions the data into groups, where each group contains objects with similar spatial extents. This index allows for efficient retrieval of features based on their spatial relationships, such as containment, intersection, or proximity.
+
+Quadtree Index: A quadtree is a tree-based spatial index that recursively divides the data into four equal quadrants. Each quadrant represents a node in the tree, and the process continues until each node contains a manageable number of features. It provides efficient searching and retrieval of objects based on their spatial relationships within a given area.
+
+KD-Tree Index: A KD-tree (k-dimensional tree) is a binary tree structure used to index multi-dimensional data. It partitions the data based on a chosen splitting axis and divides the space into two equal subspaces at each level. KD-trees are particularly useful for nearest neighbor searches in multidimensional spaces.
+
+These are just a few examples of spatial indexes used in GIS. The choice of index depends on the nature of the data, the types of spatial operations to be performed, and the specific requirements of the application.
+
+By using a spatial index, GIS systems can quickly narrow down the search space and reduce the number of features that need to be examined during spatial queries, resulting in improved query performance and overall system efficiency.
+
+It's important to note that the creation and maintenance of spatial indexes involve a trade-off between storage space and query performance. Building and updating spatial indexes can require additional computational resources, but the benefits in terms of query speed and efficiency often outweigh the costs.
+
+In summary, a spatial index in GIS is a data structure that organizes and optimizes the retrieval of spatial objects based on their spatial relationships. It enhances the efficiency and performance of spatial queries and operations, allowing for faster data retrieval and analysis.
+
+Oracle SDO
+
+Oracle SDO (Spatial Data Option) is a feature provided by Oracle Database that offers robust capabilities for storing, managing, and analyzing spatial data. SDO enables the storage of spatial data types and supports a wide range of spatial operations and functions within the Oracle database environment.
+
+Key features and concepts of Oracle SDO include:
+
+Spatial Data Types: Oracle SDO introduces specific spatial data types to represent spatial objects within the database. The main spatial data types are:
+
+SDO_GEOMETRY: This is the primary data type for representing spatial objects in Oracle. SDO_GEOMETRY stores the spatial information, such as point coordinates, line segments, and polygon vertices, along with additional attributes.
+
+SDO_POINT: This data type represents a single point in a spatial object and is often used in conjunction with SDO_GEOMETRY.
+
+Spatial Indexing: Oracle SDO provides various spatial indexing techniques to efficiently query and retrieve spatial data. It includes support for R-tree indexing, which allows for quick retrieval of spatial objects based on their spatial relationships.
+
+Spatial Operators and Functions: Oracle SDO offers a comprehensive set of spatial operators and functions to perform spatial analysis and querying. These include operations such as spatial intersections, buffers, distance calculations, and overlay operations.
+
+Spatial Query Language (SQL/MM): Oracle SDO supports the SQL/MM (SQL Multimedia) standard for spatial querying and analysis. It allows users to express spatial operations using SQL statements, making it easier to integrate spatial data with traditional database operations.
+
+Network Data Model: Oracle SDO provides support for modeling and analyzing network data, such as road networks or utility networks. It includes functions for network tracing, route calculations, and network analysis.
+
+Integration with Oracle Tools: Oracle SDO is seamlessly integrated with various Oracle tools and products, such as Oracle Spatial and Graph, Oracle Locator, and Oracle MapViewer. These tools provide additional functionality for spatial data management, visualization, and web mapping.
+
+Oracle SDO enables organizations to leverage the power of spatial data within their Oracle Database environment. It facilitates the storage, retrieval, and analysis of spatial information, allowing for complex spatial queries, spatial data integration, and spatially enabled applications.
+
+With Oracle SDO, users can perform tasks such as spatial data integration, geocoding, routing, proximity analysis, and spatial data visualization. It is widely used in various industries, including urban planning, transportation management, environmental analysis, utility management, and asset tracking.
+
+In summary, Oracle SDO is a feature of Oracle Database that provides spatial data management capabilities. It offers spatial data types, indexing techniques, spatial operators, and integration with Oracle tools to enable efficient storage, analysis, and retrieval of spatial data within the Oracle environment.
+
+GeoJSON
+
+GeoJSON is a popular open standard format for representing and exchanging geospatial data. It is a lightweight, text-based format that allows for the encoding of various geographic data structures, including points, lines, polygons, and their associated attributes. GeoJSON is based on the JSON (JavaScript Object Notation) format, making it easy to read and write by both humans and machines.
+
+Here are the key components and features of GeoJSON:
+
+Geometry Types: GeoJSON supports several geometry types for representing geographic features:
+
+Point: Represents a single geographic point with coordinates.
+LineString: Represents a sequence of connected line segments.
+Polygon: Represents a closed area defined by a boundary consisting of linear rings.
+MultiPoint: Represents multiple points.
+MultiLineString: Represents multiple line strings.
+MultiPolygon: Represents multiple polygons.
+GeometryCollection: Represents a collection of one or more geometry objects of any type.
+Feature Objects: GeoJSON allows for the representation of individual geographic features using Feature objects. Each Feature object contains a geometry object (e.g., Point, LineString, Polygon) along with associated attribute properties.
+
+Feature Collection: A Feature Collection is a container that holds multiple Feature objects. It allows for the grouping of related geographic features into a single collection.
+
+Coordinate System: GeoJSON supports coordinates defined in the WGS84 geographic coordinate system, which uses latitude and longitude values. Coordinates can be specified in either 2D (latitude, longitude) or 3D (latitude, longitude, altitude) formats.
+
+Attribute Properties: GeoJSON can store additional properties associated with geographic features. These properties can include information such as names, IDs, descriptions, or any other relevant attribute data.
+
+GeoJSON is widely used in various applications and platforms due to its simplicity and compatibility with modern web technologies. It is commonly used for data exchange between different GIS systems, web mapping services, and spatial data storage.
+
+Some key advantages of GeoJSON include:
+
+Lightweight: GeoJSON is a compact and readable format, making it suitable for transmitting data over networks or storing it in databases efficiently.
+
+Platform-Independent: GeoJSON is based on the widely adopted JSON format, which is supported by a variety of programming languages and platforms.
+
+Web-Friendly: GeoJSON is compatible with web technologies such as JavaScript and can be easily integrated into web mapping libraries and frameworks.
+
+Human-Readable: The text-based structure of GeoJSON makes it easy for humans to read and understand, which is useful for debugging and data validation purposes.
+
+However, it's worth noting that GeoJSON may not be the most efficient format for very large datasets or complex geometries, as it lacks some of the optimizations provided by binary formats like Shapefile or Geodatabase.
+
+In summary, GeoJSON is a lightweight and widely adopted format for representing geospatial data. It allows for the encoding of points, lines, polygons, and their associated attributes in a human-readable and machine-friendly manner. GeoJSON is commonly used for data exchange, web mapping, and interoperability between different GIS systems.
+
+WKT and B
+
+WKT (Well-Known Text) and WKB (Well-Known Binary) are two common formats used to represent and exchange geospatial data in a textual and binary form, respectively. They provide standardized ways to encode geometric objects and their attributes, allowing for interoperability between different GIS systems and programming languages.
+
+Well-Known Text (WKT):
+WKT is a text-based format that represents geospatial objects using a human-readable syntax. It uses plain text to describe the geometric shapes, their coordinates, and any associated attributes. WKT is based on a well-defined grammar, making it easy to parse and generate using various programming languages.
+Here's an example of a WKT representation for a simple point:
+
+scss
+Copy code
+POINT (30 10)
+The WKT representation starts with the geometry type, followed by the coordinates enclosed in parentheses.
+
+Well-Known Binary (WKB):
+WKB is a binary format that represents geospatial data using a compact binary encoding. It is more efficient in terms of storage and transmission compared to WKT, as binary data can be processed more quickly by computers. WKB is commonly used in database systems and for data transfer between GIS applications.
+WKB representations vary based on the endianness of the system (little-endian or big-endian). The binary format consists of a header indicating the geometry type, followed by the binary-encoded coordinates and attribute data.
+
+Here's an example of a WKB representation for the same point as above:
+
+Copy code
+010100000000000000000024400000000000003040
+The WKB representation is a sequence of bytes, with each byte encoding a specific part of the geometry.
+
+WKT and WKB formats support various geometric objects, including points, lines, polygons, multi-geometries (e.g., MultiPoint, MultiLineString, MultiPolygon), and collections of objects (GeometryCollection). They can also include additional attributes associated with the geometries.
+
+Both WKT and WKB formats are widely supported by GIS software and libraries. They provide a standard way to represent geospatial data, allowing for seamless data exchange and interoperability across different platforms and systems. The choice between WKT and WKB depends on factors such as the specific use case, system requirements, and the need for human-readability versus efficiency in storage and processing.
+
+
+Compressing DTED/SRTM
+
+for %i in (*.tif) do gdal_translate -of GTiff -co COMPRESS=DEFLATE -co PREDICTOR=2 -co TILED=YES %i %~ni_ok.tif
+
+5
+
+You most probably do not want to compress DEM data with JPEG, that would be lossy and introduce weird steps in the data.
+
+Instead I recommend the DEFLATE compression. To improve the size savings you can also use a predictor for the compressor. See https://gdal.org/drivers/raster/gtiff.html for details and more options.
+
+for %i in (*.tif) do gdal_translate -of GTiff -co COMPRESS=DEFLATE -co PREDICTOR=2 -co TILED=YES %i %~ni_ok.tif
+If your data is floating point values, use PREDICTOR=3.
+
+
