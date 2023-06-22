@@ -192,4 +192,22 @@ Instead I recommend the DEFLATE compression. To improve the size savings you can
 for %i in (*.tif) do gdal_translate -of GTiff -co COMPRESS=DEFLATE -co PREDICTOR=2 -co TILED=YES %i %~ni_ok.tif
 If your data is floating point values, use PREDICTOR=3.
 
+GEOINT stands for Geospatial Intelligence. It refers to the analysis and exploitation of geospatial information and data to gain insights, make decisions, and support various missions and activities. GEOINT combines geospatial data with intelligence analysis to provide a comprehensive understanding of the operating environment.
 
+Geospatial intelligence involves collecting, analyzing, and interpreting data that is geographically referenced or tied to a specific location on Earth's surface. It encompasses various sources of geospatial data, including satellite imagery, aerial photography, terrain data, geodetic information, and other spatially-referenced datasets.
+
+The primary focus of GEOINT is to extract meaningful information from geospatial data to support decision-making processes. It involves the integration and analysis of different types of data, including imagery, terrain, infrastructure, demographics, and other relevant geospatial layers.
+
+GIS stands for Geographic Information System. It is a system designed to capture, store, analyze, manage, and present spatial or geographic data. GIS combines both hardware and software tools to integrate, manipulate, and visualize various types of data tied to specific geographic locations.
+
+GIS technology allows users to understand, interpret, and make informed decisions about real-world phenomena by linking data to geographic locations. It can incorporate data from different sources, such as satellite imagery, aerial photography, GPS data, maps, and databases, to create layered and interactive maps or models.
+
+The key components of a GIS include:
+
+Data: GIS relies on various types of spatial and attribute data. Spatial data represents the geographic location and shape of features, such as points, lines, or polygons. Attribute data provides additional information associated with the spatial features.
+
+Hardware: GIS utilizes computers, servers, mobile devices, GPS receivers, and other tools to capture, store, process, and display geographic data.
+
+Software: GIS software allows users to perform tasks like data entry, editing, analysis, and visualization. Popular GIS software includes ArcGIS, QGIS, and Google Earth.
+
+Methods: GIS employs analytical techniques and algorithms to manipulate and analyze spatial data, including spatial queries, geostatistics, network analysis, and spatial modeling.
