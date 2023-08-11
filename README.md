@@ -13,6 +13,8 @@ https://www.linkedin.com/in/joe-dillard-gis-architect
 
 ## OTHER LINKS
 
+https://mvnrepository.com/artifact/org.grails.plugins/spring-security-core/5.2.1
+
 https://www.instagram.com/josephcdillard/
 
 
