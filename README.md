@@ -13,6 +13,29 @@ https://www.linkedin.com/in/joe-dillard-gis-architect
 
 ## OTHER LINKS
 
+
+
+Wireshark The world's most popular network protocol analyzer
+https://www.wireshark.org/
+
+BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser.
+https://beefproject.com/
+
+theHarvester is a simple to use, yet powerful tool designed to be used during the reconnaissance stage of a red team assessment or penetration test
+https://github.com/laramies/theHarvester
+
+OWASP
+https://owasp.org/www-project-zap/
+
+tcpdump(8) - Linux man page
+https://linux.die.net/man/8/tcpdump
+
+dnsenum is a perl script that enumerates DNS information
+https://github.com/fwaeytens/dnsenum
+
+This is a Python command-line utility and library for using websites that can perform port scans on your behalf.
+https://github.com/vesche/scanless
+
 https://mvnrepository.com/artifact/org.grails.plugins/spring-security-core/5.2.1
 
 https://www.instagram.com/josephcdillard/
