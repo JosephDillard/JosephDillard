@@ -22,3 +22,37 @@ for field in fields_fc2:
         print(f"Deleted field {field} from {fc2}")
 
 print("Field comparison and deletion completed.")
+
+
+import arcpy
+
+# Specify the paths to the two feature classes
+fc1 = r'C:\path\to\your\geodatabase.gdb\FeatureClass1'
+fc2 = r'C:\path\to\your\geodatabase.gdb\FeatureClass2'
+
+# Get a list of fields in each feature class
+fields_fc1 = [field.name for field in arcpy.ListFields(fc1)]
+fields_fc2 = [field.name for field in arcpy.ListFields(fc2)]
+
+# Find the common fields
+common_fields = set(fields_fc1).intersection(fields_fc2)
+
+# Loop through the fields in FeatureClass1 and delete fields that are not in common_fields
+for field in fields_fc1:
+    if field not in common_fields:
+        try:
+            arcpy.DeleteField_management(fc1, field)
+            print(f"Deleted field {field} from {fc1}")
+        except arcpy.ExecuteError as e:
+            print(f"Error deleting field {field} from {fc1}: {str(e)}")
+
+# Loop through the fields in FeatureClass2 and delete fields that are not in common_fields
+for field in fields_fc2:
+    if field not in common_fields:
+        try:
+            arcpy.DeleteField_management(fc2, field)
+            print(f"Deleted field {field} from {fc2}")
+        except arcpy.ExecuteError as e:
+            print(f"Error deleting field {field} from {fc2}: {str(e)}")
+
+print("Field comparison and deletion completed.")
