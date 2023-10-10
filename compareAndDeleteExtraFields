@@ -21,6 +21,7 @@ fieldsToKeep = ["GLOBALID", "ASSETTYPEDESCRIPTION", "ASSETGROUPDESCRIPTION", "SH
 fieldsToKeepAll = list(commonFields) + fieldsToKeep
 
 # Loops through the fields in fc2 and deletes fields that are not in fieldsToKeepAll
+# Designed to list errors but keep running script. 
 for field in fields_fc2:
     if field not in fieldsToKeepAll:
         try:
