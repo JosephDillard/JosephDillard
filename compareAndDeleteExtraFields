@@ -1,25 +1,32 @@
 import arcpy
 
-# Specify the paths to the two feature classes
+# 2020 FC
 fc1 = r'C:\path\to\your\geodatabase.gdb\FeatureClass1'
+# 2023 FC # Should be a new FC with data from the Orginal 2023 FC, to get around lock issue. 
 fc2 = r'C:\path\to\your\geodatabase.gdb\FeatureClass2'
 
-# Returns a list of fields in fc1 featureclass
-fields_fc1 = [field.name for field in arcpy.ListFields(fc1)]
+# Returns a list of fields in fc1 featureclass # 2020 FC
+fieldsFc1 = [field.name for field in arcpy.ListFields(fc1)]
 
-# Returns a list of fields in fc2 featureclass
-fields_fc2 = [field.name for field in arcpy.ListFields(fc2)]
+# Returns a list of fields in fc2 featureclass # New 2023 FC you created from orginal 2023 data
+fieldsFc2 = [field.name for field in arcpy.ListFields(fc2)]
 
 # Finds the common fields, fields that are in both featureclasses
-common_fields = set(fields_fc1).intersection(fields_fc2)
+commonFields = set(fieldsFc1).intersection(fieldsFc2)
 
-# Loops through the fields in fc2 and deletes fields that are not in common_fields
+# List fields below you want to keep from being deleted from fc2 - That are only in fc2
+fieldsToKeep = ["GLOBALID", "ASSETTYPEDESCRIPTION", "ASSETGROUPDESCRIPTION", "SHAPE", "SHAPE_Length"]
+
+# Fields you want to keep from above added to commonFields and into new list.
+fieldsToKeepAll = list(commonFields) + fieldsToKeep
+
+# Loops through the fields in fc2 and deletes fields that are not in fieldsToKeepAll
 for field in fields_fc2:
-    if field not in common_fields:
+    if field not in fieldsToKeepAll:
         try:
             arcpy.DeleteField_management(fc2, field)
             print(f"Deleted field {field} from {fc2}")
         except arcpy.ExecuteError as e:
             print(f"Error deleting field {field} from {fc2}: {str(e)}")
 
-print("Field comparison and deletion completed.")
+print("Field deletion complete. Fields listed with no errors should have been deleted from fc2.")
