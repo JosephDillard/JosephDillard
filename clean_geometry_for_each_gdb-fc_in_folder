@@ -1,0 +1,28 @@
+import arcpy
+import os
+
+# Set the folder where your geodatabases are located
+folder_path = r"C:\path\to\your\folder"
+
+# Create a list of all .gdb files in the folder
+geodatabase_list = [os.path.join(folder_path, file) for file in os.listdir(folder_path) if file.endswith(".gdb")]
+
+# Iterate through the geodatabases and clean the geometry of feature classes
+for gdb_path in geodatabase_list:
+    try:
+        arcpy.env.workspace = gdb_path
+        feature_datasets = arcpy.ListDatasets("*", "Feature")
+        
+        # Clean geometry of feature classes in the root of the geodatabase
+        for feature_class in arcpy.ListFeatureClasses():
+            arcpy.RepairGeometry_management(feature_class)
+        
+        # If there are feature datasets, clean geometry of feature classes within them
+        if feature_datasets:
+            for dataset in feature_datasets:
+                arcpy.env.workspace = os.path.join(gdb_path, dataset)
+                for feature_class in arcpy.ListFeatureClasses():
+                    arcpy.RepairGeometry_management(feature_class)
+    
+    except Exception as e:
+        print(f"Error processing {gdb_path}: {str(e)}")
