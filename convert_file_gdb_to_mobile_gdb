@@ -1,0 +1,25 @@
+import arcpy
+import os
+
+###Place holder, not working
+
+# Converts a mobile geodatabase to a file geodatabase
+def convert_geodatabase(input_geodatabase, output_geodatabase):
+    try:
+        arcpy.Copy_management(input_geodatabase, output_geodatabase)
+        print(f"Converted: {input_geodatabase} -> {output_geodatabase}")
+    except Exception as e:
+        print(f"Failed to convert {input_geodatabase}: {str(e)}")
+
+# The top-level folder where you want to search for .geodatabase files
+top_folder = r"C:\path\to\your\top\folder"
+
+# Recursively search for .geodatabase files
+for root, dirs, files in os.walk(top_folder):
+    for file in files:
+        if file.lower().endswith(".geodatabase"):
+            input_geodatabase = os.path.join(root, file)
+            output_geodatabase = os.path.join(root, file.replace(".geodatabase", ".gdb"))
+
+            # Call the function to perform the conversion
+            convert_geodatabase(input_geodatabase, output_geodatabase)
