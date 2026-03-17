@@ -1,14 +1,7 @@
 
-## MY RESUME
 
 
-https://github.com/JosephDillard/JosephDillard/blob/main/Joseph_Dillard_GIS_Architect_Developer.pdf
 
-
-## MY LINKEDIN
-
-
-[https://www.linkedin.com/in/joe-dillard-gis-architect](https://www.linkedin.com/in/joseph-dillard-04633399/)
 
 
 ## OTHER LINKS
