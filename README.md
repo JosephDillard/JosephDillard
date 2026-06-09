@@ -1,6 +1,6 @@
 ## GIS Architecture, Development & GeoAI References
 
-|[Resume: https://github.com/JosephDillard/JosephDillard](https://github.com/JosephDillard/JosephDillard)
+[Resume: https://github.com/JosephDillard/JosephDillard]https://github.com/JosephDillard/JosephDillard/blob/main/Joseph_Dillard_Solution_Architect_Resume_v2.docx
 
 I work across enterprise GIS architecture, ArcGIS Enterprise, automation, spatial data engineering, cloud-native GIS, and GeoAI.  
 This section tracks useful Esri and open-source references for GIS architects, developers, and geospatial AI workflows.
