@@ -1,6 +1,6 @@
 ## GIS Architecture, Development & GeoAI References
 
-[Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v2.docx)
+[Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v2.docx)
 
 I work across enterprise GIS architecture, ArcGIS Enterprise, automation, spatial data engineering, cloud-native GIS, and GeoAI.  
 This section tracks useful Esri and open-source references for GIS architects, developers, and geospatial AI workflows.
