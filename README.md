@@ -13,7 +13,7 @@ A Python-based GeoAI workflow platform for detecting and processing geospatial a
 
 How it fits: this repo can generate or prepare geospatial intelligence that flows into the data gateway, lands in PostGIS, and is visualized in the status board.
 
-Links: [Repo](https://github.com/JosephDillard/geoai-asset-detection-platform) · [README](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md) · [Workflow API](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/src/geoai_roads/api.py) · [PostGIS Loader](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/src/geoai_roads/postgis.py) · [Workflow Catalog](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/config/workflows.example.yaml)
+Links: [Repo](https://github.com/JosephDillard/geoai-asset-detection-platform) · [README](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md)
 
 Keywords: GeoAI, computer vision, semantic segmentation, PostGIS, GeoPackage, COG, PyTorch, ONNX, GeoPandas
 
@@ -23,7 +23,7 @@ A Grails-based operational map viewer for geospatial status, incidents, infrastr
 
 How it fits: this is the visualization layer for the stack. It consumes spatial services from the local GIS environment and can receive live refresh events from the data gateway.
 
-Links: [Repo](https://github.com/JosephDillard/geospatial-status-board) · [README](https://github.com/JosephDillard/geospatial-status-board/blob/master/README.md) · [Architecture](https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md) · [Map Viewer](https://github.com/JosephDillard/geospatial-status-board/blob/master/grails-app/views/map/index.gsp) · [Local GIS Stack](https://github.com/JosephDillard/geospatial-status-board/blob/master/docker-compose.yml)
+Links: [Repo](https://github.com/JosephDillard/geospatial-status-board) · [README](https://github.com/JosephDillard/geospatial-status-board/blob/master/README.md) · [Architecture](https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md) 
 
 Keywords: Grails, MapLibre, GeoServer, PostGIS, WFS, dashboard, incident mapping, SignalR, MGRS
 
