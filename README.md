@@ -33,7 +33,7 @@ A .NET and Python data gateway for loading geospatial files into PostGIS and not
 
 How it fits: this repo acts as the ingestion and streaming layer. It can receive data, load it into PostGIS, and send SignalR events that the status board can use to refresh map layers.
 
-Links: [Repo](https://github.com/JosephDillard/geospatial-data-gateway) · [README](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/README.md) · [.NET API](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/src/Geospatial.DataGateway.Api/Program.cs) · [Python Worker](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/python/geospatial_data_gateway/cli.py) · [Ingest Contract](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/docs/ingest-contract.md)
+Links: [Repo](https://github.com/JosephDillard/geospatial-data-gateway) · [README](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/README.md) 
 
 Keywords: .NET, ASP.NET Core, SignalR, Python, PostGIS, GeoJSON, Shapefile, GeoPackage, CSV, real-time mapping
 
@@ -43,7 +43,7 @@ A Docker-ready Model Context Protocol services repo for geospatial assistant too
 
 How it fits: this repo adds AI-assistant tooling around the map experience. It can eventually connect map clicks from the status board to MCP tools that enrich locations with names, nearby places, summaries, and search links.
 
-Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [README](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md) · [GeoNames/Wikipedia MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia) · [MCP Docker Config](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/configs/mcp.docker.example.json) · [Map Point Contract](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/docs/map-point-tool-contract.md)
+Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [README](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md) · [GeoNames/Wikipedia MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia) 
 
 Keywords: MCP, Docker, GeoNames, Wikipedia, map click, geospatial context, tool calling, LLM tools, stdio
 
