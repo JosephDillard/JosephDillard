@@ -3,10 +3,49 @@
 [Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v3.docx)
 
 
-https://github.com/JosephDillard/geospatial-status-board
+## Geospatial / GeoAI Project Stack
 
-I work across enterprise GIS architecture, ArcGIS Enterprise, automation, spatial data engineering, cloud-native GIS, and GeoAI.  
-This section tracks useful Esri and open-source references for GIS architects, developers, and geospatial AI workflows.
+I am building a connected geospatial and GeoAI project stack focused on map-based operations, PostGIS-backed data workflows, real-time map updates, and AI-assisted spatial context. These repositories are designed to work together: the GeoAI platform produces spatial intelligence, the data gateway loads and streams geospatial data, the status board visualizes it, and the MCP services add map-aware assistant tools.
+
+### GeoAI Asset Detection Platform
+
+A Python-based GeoAI workflow platform for detecting and processing geospatial assets from imagery and vector data. It focuses on repeatable model workflows, PostGIS loading, and geospatial output formats that can feed operational mapping systems.
+
+How it fits: this repo can generate or prepare geospatial intelligence that flows into the data gateway, lands in PostGIS, and is visualized in the status board.
+
+Links: [Repo](https://github.com/JosephDillard/geoai-asset-detection-platform) · [README](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md) · [Workflow API](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/src/geoai_roads/api.py) · [PostGIS Loader](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/src/geoai_roads/postgis.py) · [Workflow Catalog](https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/config/workflows.example.yaml)
+
+Keywords: GeoAI, computer vision, semantic segmentation, PostGIS, GeoPackage, COG, PyTorch, ONNX, GeoPandas
+
+### Geospatial Status Board
+
+A Grails-based operational map viewer for geospatial status, incidents, infrastructure, and live map layers. It uses a local GIS stack with PostGIS, GeoServer, and MapLibre to provide a browser-based map experience.
+
+How it fits: this is the visualization layer for the stack. It consumes spatial services from the local GIS environment and can receive live refresh events from the data gateway.
+
+Links: [Repo](https://github.com/JosephDillard/geospatial-status-board) · [README](https://github.com/JosephDillard/geospatial-status-board/blob/master/README.md) · [Architecture](https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md) · [Map Viewer](https://github.com/JosephDillard/geospatial-status-board/blob/master/grails-app/views/map/index.gsp) · [Local GIS Stack](https://github.com/JosephDillard/geospatial-status-board/blob/master/docker-compose.yml)
+
+Keywords: Grails, MapLibre, GeoServer, PostGIS, WFS, dashboard, incident mapping, SignalR, MGRS
+
+### Geospatial Data Gateway
+
+A .NET and Python data gateway for loading geospatial files into PostGIS and notifying downstream map clients when layers change. It is designed as the bridge between raw spatial data, database storage, and live web map refreshes.
+
+How it fits: this repo acts as the ingestion and streaming layer. It can receive data, load it into PostGIS, and send SignalR events that the status board can use to refresh map layers.
+
+Links: [Repo](https://github.com/JosephDillard/geospatial-data-gateway) · [README](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/README.md) · [.NET API](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/src/Geospatial.DataGateway.Api/Program.cs) · [Python Worker](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/python/geospatial_data_gateway/cli.py) · [Ingest Contract](https://github.com/JosephDillard/geospatial-data-gateway/blob/master/docs/ingest-contract.md)
+
+Keywords: .NET, ASP.NET Core, SignalR, Python, PostGIS, GeoJSON, Shapefile, GeoPackage, CSV, real-time mapping
+
+### Geospatial MCP Services
+
+A Docker-ready Model Context Protocol services repo for geospatial assistant tools. The first MCP service supports selecting a point on a map and using GeoNames and Wikipedia-style lookup workflows to discover nearby geographic context.
+
+How it fits: this repo adds AI-assistant tooling around the map experience. It can eventually connect map clicks from the status board to MCP tools that enrich locations with names, nearby places, summaries, and search links.
+
+Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [README](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md) · [GeoNames/Wikipedia MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia) · [MCP Docker Config](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/configs/mcp.docker.example.json) · [Map Point Contract](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/docs/map-point-tool-contract.md)
+
+Keywords: MCP, Docker, GeoNames, Wikipedia, map click, geospatial context, tool calling, LLM tools, stdio
 
 ---
 
