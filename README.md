@@ -1,4 +1,4 @@
-## GIS Architecture, Development & GeoAI References
+
 
 [Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v3.docx)
 
@@ -48,6 +48,8 @@ Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [READ
 Keywords: MCP, Docker, GeoNames, Wikipedia, map click, geospatial context, tool calling, LLM tools, stdio
 
 ---
+## GIS Architecture, Development & GeoAI References
+
 
 ## Esri Architecture / Enterprise GIS
 
