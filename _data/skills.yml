@@ -1,0 +1,63 @@
+- group: Enterprise GIS
+  items:
+    - ArcGIS Enterprise
+    - ArcGIS Server
+    - Portal for ArcGIS
+    - ArcGIS Pro
+    - ArcSDE
+    - ArcGIS JS API
+    - Utility Network
+    - QGIS
+    - GeoServer
+    - GeoPandas
+
+- group: Cloud and Infrastructure
+  items:
+    - Microsoft Azure
+    - Docker
+    - Windows Server
+    - Linux/Unix
+    - VMware vSphere
+    - Hyper-V
+    - Apache Tomcat
+    - Enterprise hosting
+    - Capacity planning
+
+- group: Spatial Data
+  items:
+    - PostgreSQL/PostGIS
+    - Oracle Database
+    - Oracle Spatial
+    - MySQL
+    - SQL
+    - PL/SQL
+    - GeoJSON
+    - Geospatial ETL
+    - Automation
+
+- group: Software Delivery
+  items:
+    - Java
+    - JavaScript
+    - Python
+    - C#
+    - Angular
+    - Node.js
+    - Spring Boot
+    - Grails
+    - REST APIs
+    - SOAP APIs
+    - Maven
+    - Gradle
+    - Git/GitHub
+
+- group: Delivery Leadership
+  items:
+    - Requirements discovery
+    - Solution architecture
+    - MVP delivery
+    - Agile/Scrum
+    - Jira/Confluence
+    - Testing
+    - Training
+    - RMF-aware environments

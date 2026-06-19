@@ -1,0 +1,38 @@
+- organization: TRC Companies - Lemur Team
+  title: GIS Solutions Architect / Enterprise GIS Consultant
+  dates: Sept 2023 - Mar 2026
+  bullets:
+    - Assessed utility customer readiness for Lemur mobile GIS workflows, including ArcGIS Enterprise services, data architecture, and operational fit.
+    - Supported ArcGIS Pro, ArcGIS Server, PostgreSQL/PostGIS, Utility Network, service publishing, mobile application consumption, and deployment readiness.
+    - Helped customers understand service dependencies, testing procedures, training needs, and production handoff requirements.
+
+- organization: L3Harris Technologies - Greenville, TX
+  title: Scientist, System Engineer - GIS Solutions Architect
+  dates: Aug 2021 - Aug 2023
+  bullets:
+    - Designed and configured commercial and open-source GIS server systems for internal research and development initiatives.
+    - Led use-case and requirements discovery for GIS systems, aligning architecture with stakeholder and mission needs.
+    - Built automated geospatial data pipelines using NiFi and GeoPandas to convert GeoJSON into Oracle Spatial.
+
+- organization: CACI International Inc. / U.S. Forces Korea
+  title: GIS System Architect - GIS Developer
+  dates: Jan 2013 - May 2021
+  bullets:
+    - Architected and led development of an ArcGIS-based situational awareness/common operating picture platform for Pacific Air Forces and U.S. Forces Korea.
+    - Guided four major architecture revisions over 8 years, supporting more than 50 custom applications, map views, and dashboards.
+    - Maintained zero downtime due to technical failure during major use events with up to 2,900 unique users and observed load up to 20,000 ArcGIS Server requests per minute.
+
+- organization: CACI International Inc. - Osan Air Base, Korea
+  title: Senior GIS Analyst - GIS System Administrator
+  dates: Feb 2004 - Jan 2013
+  bullets:
+    - Administered ArcGIS Server, ArcIMS/IMF, and ArcSDE Oracle database servers across multiple enterprise networks.
+    - Delivered 24/7 technical support for enterprise GIS operations and operational exercise support.
+    - Managed Windows Server and VMware vSphere virtual machines supporting enterprise GIS services.
+
+- organization: U.S. Army
+  title: Production Manager and GEOINT Analyst
+  dates: Apr 2000 - Feb 2004
+  bullets:
+    - Managed mission-critical GIS-driven product development, map production, topographic operations, QA, and imagery support.
+    - Supervised personnel, authored standard operating procedures, trained users, and produced more than 375 GIS and map-based documents.

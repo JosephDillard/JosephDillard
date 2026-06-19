@@ -1,0 +1,33 @@
+title: Joseph C. Dillard
+description: Enterprise GIS and Azure Solution Architect focused on ArcGIS Enterprise, cloud/hybrid infrastructure, GeoAI, and operational geospatial systems.
+url: "https://josephdillard.github.io"
+baseurl: "/JosephDillard"
+repository: JosephDillard/JosephDillard
+lang: en
+timezone: America/Chicago
+
+author:
+  name: Joseph C. Dillard
+  email: joseph.dillard@outlook.com
+  location: Rockwall, Texas
+  linkedin: joe-dillard-gis-architect
+  github: JosephDillard
+
+resume:
+  pdf: /Joseph_C_Dillard_Resume_June2026.pdf
+  docx: /Joseph_Dillard_Solution_Architect_Resume_v3.docx
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /Dillard_GeoBase_Github_Commits.png

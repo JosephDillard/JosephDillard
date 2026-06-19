@@ -1,0 +1,78 @@
+- title: GeoAI Asset Detection Platform
+  subtitle: Python-based GeoAI workflow platform
+  summary: Repeatable geospatial asset detection and processing workflows for imagery and vector data that can feed operational mapping systems.
+  impact: Prepares spatial intelligence for PostGIS-backed services, GeoPackage output, and downstream status-board visualization.
+  tags:
+    - GeoAI
+    - Python
+    - PostGIS
+    - GeoPackage
+    - COG
+    - PyTorch
+    - ONNX
+    - GeoPandas
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geoai-asset-detection-platform
+    - label: README
+      url: https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md
+
+- title: Geospatial Status Board
+  subtitle: Operational map viewer and status dashboard
+  summary: Grails-based map experience for incidents, infrastructure, live layers, and geospatial status workflows.
+  impact: Demonstrates practical integration across MapLibre, PostGIS, GeoServer, WFS, local development, and browser-based operations.
+  tags:
+    - Grails
+    - MapLibre
+    - GeoServer
+    - PostGIS
+    - WFS
+    - Dashboard
+    - SignalR
+    - MGRS
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geospatial-status-board
+    - label: README
+      url: https://github.com/JosephDillard/geospatial-status-board/blob/master/README.md
+    - label: Architecture
+      url: https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md
+
+- title: Geospatial Data Gateway
+  subtitle: Spatial data ingestion and notification layer
+  summary: .NET and Python gateway for loading geospatial files into PostGIS and notifying map clients when layers change.
+  impact: Bridges raw spatial data, database storage, web map refreshes, and real-time geospatial operations.
+  tags:
+    - .NET
+    - ASP.NET Core
+    - SignalR
+    - Python
+    - PostGIS
+    - GeoJSON
+    - Shapefile
+    - GeoPackage
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geospatial-data-gateway
+    - label: README
+      url: https://github.com/JosephDillard/geospatial-data-gateway/blob/master/README.md
+
+- title: Geospatial MCP Services
+  subtitle: Map-aware assistant tooling
+  summary: Docker-ready Model Context Protocol services for enriching map clicks with nearby geographic and reference context.
+  impact: Connects operational map interaction to AI-assistant workflows, place lookup, nearby context, and tool calling.
+  tags:
+    - MCP
+    - Docker
+    - GeoNames
+    - Wikipedia
+    - Map click
+    - Geospatial context
+    - LLM tools
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geospatial-mcp-services
+    - label: README
+      url: https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md
+    - label: GeoNames/Wikipedia MCP
+      url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia

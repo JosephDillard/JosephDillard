@@ -1,0 +1,18 @@
+<header class="site-header" aria-label="Site header">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+    <span class="brand__mark">JD</span>
+    <span class="brand__text">
+      <strong>Joseph C. Dillard</strong>
+      <span>Enterprise GIS Architect</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    {% assign current_url = page.url | replace: 'index.html', '' %}
+    <a href="{{ '/' | relative_url }}" {% if current_url == '/' %}aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/projects/' | relative_url }}" {% if current_url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+    <a href="{{ '/skills/' | relative_url }}" {% if current_url == '/skills/' %}aria-current="page"{% endif %}>Skills</a>
+    <a href="{{ '/resume/' | relative_url }}" {% if current_url == '/resume/' %}aria-current="page"{% endif %}>Resume</a>
+    <a href="{{ '/contact/' | relative_url }}" {% if current_url == '/contact/' %}aria-current="page"{% endif %}>Contact</a>
+  </nav>
+</header>
