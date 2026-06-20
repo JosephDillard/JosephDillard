@@ -456,6 +456,42 @@ p {
   align-self: start;
 }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.4rem;
+}
+
+.screenshot-card {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(19, 34, 33, 0.08);
+}
+
+.screenshot-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-soft);
+}
+
+.screenshot-card div {
+  padding: 1.1rem;
+}
+
+.screenshot-card h2 {
+  margin-bottom: 0.45rem;
+  font-size: 1.35rem;
+}
+
+.screenshot-card p:last-child {
+  margin-bottom: 0;
+}
+
 .resume-summary {
   padding: 1.35rem;
   border-left: 5px solid var(--blue);

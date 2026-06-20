@@ -3,6 +3,8 @@
 
 This repository now includes a GitHub Pages / Jekyll portfolio site for job search visibility, with pages for projects, skills, resume highlights, and contact information. Existing resume files and profile README content remain in place.
 
+Screenshot documentation: [Project screenshots](https://josephdillard.github.io/JosephDillard/screenshots/)
+
 [Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v3.docx)
 
 
