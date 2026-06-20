@@ -18,7 +18,7 @@ body_class: resume-page
 
 <section class="section section--no-top" aria-labelledby="summary-heading">
   <div class="resume-summary" id="summary-heading">
-    <p>Experienced in ArcGIS Enterprise, ArcGIS Server, Portal, ArcGIS Pro, enterprise geodatabases, PostgreSQL/PostGIS, Oracle Spatial, data pipelines, and cloud/hybrid infrastructure. Strong record translating customer workflows into scalable architecture, data services, mobile GIS enablement, testing plans, training, and production-ready systems for defense, utility, and enterprise customers. U.S. Army Veteran. Current Security+ CE.</p>
+    <p>Experienced in ArcGIS Enterprise, ArcGIS Server, Portal, ArcGIS Pro, enterprise geodatabases, PostgreSQL/PostGIS, Oracle Spatial, data pipelines, GeoAI, map operations, and cloud/hybrid infrastructure. Strong record translating customer workflows into scalable architecture, data services, mobile GIS enablement, testing plans, training, and production-ready systems for defense, utility, and enterprise customers. U.S. Army Veteran. Current Security+ CE.</p>
   </div>
 </section>
 

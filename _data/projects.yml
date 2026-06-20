@@ -1,7 +1,7 @@
 - title: GeoAI Asset Detection Platform
   subtitle: Python-based GeoAI workflow platform
   summary: Repeatable geospatial asset detection and processing workflows for imagery and vector data that can feed operational mapping systems.
-  impact: Prepares spatial intelligence for PostGIS-backed services, GeoPackage output, and downstream status-board visualization.
+  impact: Prepares spatial intelligence for PostGIS-backed services, GeoPackage output, REST workflow execution, and downstream status-board visualization.
   tags:
     - GeoAI
     - Python
@@ -19,8 +19,8 @@
 
 - title: Geospatial Status Board
   subtitle: Operational map viewer and status dashboard
-  summary: Grails-based map experience for incidents, infrastructure, live layers, and geospatial status workflows.
-  impact: Demonstrates practical integration across MapLibre, PostGIS, GeoServer, WFS, local development, and browser-based operations.
+  summary: Grails-based map experience for incidents, infrastructure, live layers, response support, and geospatial status workflows.
+  impact: Demonstrates practical integration across MapLibre, PostGIS, GeoServer, WFS, local development, shared incident review, and browser-based operations.
   tags:
     - Grails
     - MapLibre
@@ -30,6 +30,7 @@
     - Dashboard
     - SignalR
     - MGRS
+    - LLM tools
   links:
     - label: Repo
       url: https://github.com/JosephDillard/geospatial-status-board
@@ -59,13 +60,14 @@
 
 - title: Geospatial MCP Services
   subtitle: Map-aware assistant tooling
-  summary: Docker-ready Model Context Protocol services for enriching map clicks with nearby geographic and reference context.
-  impact: Connects operational map interaction to AI-assistant workflows, place lookup, nearby context, and tool calling.
+  summary: Docker-ready Model Context Protocol services for enriching map clicks with nearby place context and incident analysis.
+  impact: Connects operational map interaction to AI-assistant workflows, GeoNames/Wikipedia lookup, incident scoring, and tool calling.
   tags:
     - MCP
     - Docker
     - GeoNames
     - Wikipedia
+    - Incident analysis
     - Map click
     - Geospatial context
     - LLM tools
@@ -76,3 +78,42 @@
       url: https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md
     - label: GeoNames/Wikipedia MCP
       url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia
+    - label: Incident Analyst MCP
+      url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst
+
+- title: Geospatial ETL Validation Toolkit
+  subtitle: Data readiness and handoff reporting
+  summary: Python toolkit for validating GeoJSON, CSV, GeoPackage, Shapefile, and GeoTIFF inputs before PostGIS load or customer handoff.
+  impact: Shows practical geospatial data quality gates, configurable schema/domain checks, COG metadata inspection, PostGIS load planning, and batch reports.
+  tags:
+    - Python
+    - GeoPandas
+    - Pyogrio
+    - PostGIS
+    - GeoPackage
+    - Shapefile
+    - GeoTIFF
+    - Data QA
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit
+    - label: README
+      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit/blob/main/README.md
+
+- title: Map-to-AI Incident Analyst
+  subtitle: MCP bridge and focused map demo
+  summary: Reviewer-friendly MapLibre incident review surface for northern New Mexico with risk scoring, MGRS tools, and response-support lookup.
+  impact: Demonstrates how an operational map can package context for MCP-backed analysis while keeping incident scoring and map actions explainable.
+  tags:
+    - MapLibre
+    - MCP bridge
+    - Incident review
+    - MGRS
+    - OpenStreetMap
+    - Risk scoring
+    - Python
+  links:
+    - label: MCP server
+      url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst
+    - label: Status Board Architecture
+      url: https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md

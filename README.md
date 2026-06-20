@@ -8,11 +8,11 @@ This repository now includes a GitHub Pages / Jekyll portfolio site for job sear
 
 ## Geospatial / GeoAI Project Stack
 
-I am building a connected geospatial and GeoAI project stack focused on map-based operations, PostGIS-backed data workflows, real-time map updates, and AI-assisted spatial context. These repositories are designed to work together: the GeoAI platform produces spatial intelligence, the data gateway loads and streams geospatial data, the status board visualizes it, and the MCP services add map-aware assistant tools.
+I am building a connected geospatial and GeoAI project stack focused on map-based operations, PostGIS-backed data workflows, real-time map updates, data readiness, and AI-assisted spatial context. These repositories are designed to work together: the ETL toolkit validates incoming data, the GeoAI platform produces spatial intelligence, the data gateway loads and streams geospatial data, the status board visualizes it, and the MCP/incident analyst projects add map-aware assistant tools.
 
 ### GeoAI Asset Detection Platform
 
-A Python-based GeoAI workflow platform for detecting and processing geospatial assets from imagery and vector data. It focuses on repeatable model workflows, PostGIS loading, and geospatial output formats that can feed operational mapping systems.
+A Python-based GeoAI workflow platform for detecting and processing geospatial assets from imagery and vector data. It focuses on repeatable model workflows, REST execution, PostGIS loading, and geospatial output formats that can feed operational mapping systems.
 
 How it fits: this repo can generate or prepare geospatial intelligence that flows into the data gateway, lands in PostGIS, and is visualized in the status board.
 
@@ -22,13 +22,13 @@ Keywords: GeoAI, computer vision, semantic segmentation, PostGIS, GeoPackage, CO
 
 ### Geospatial Status Board
 
-A Grails-based operational map viewer for geospatial status, incidents, infrastructure, and live map layers. It uses a local GIS stack with PostGIS, GeoServer, and MapLibre to provide a browser-based map experience.
+A Grails-based operational map viewer for geospatial status, incidents, infrastructure, response support, and live map layers. It uses a local GIS stack with PostGIS, GeoServer, and MapLibre to provide a browser-based map experience.
 
-How it fits: this is the visualization layer for the stack. It consumes spatial services from the local GIS environment and can receive live refresh events from the data gateway.
+How it fits: this is the visualization layer for the stack. It consumes spatial services from the local GIS environment, receives live refresh events from the data gateway, and hosts the shared map tools used by the Incident Analyst route.
 
 Links: [Repo](https://github.com/JosephDillard/geospatial-status-board) · [README](https://github.com/JosephDillard/geospatial-status-board/blob/master/README.md) · [Architecture](https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md) 
 
-Keywords: Grails, MapLibre, GeoServer, PostGIS, WFS, dashboard, incident mapping, SignalR, MGRS
+Keywords: Grails, MapLibre, GeoServer, PostGIS, WFS, dashboard, incident mapping, SignalR, MGRS, response support, map command assistant
 
 ### Geospatial Data Gateway
 
@@ -42,13 +42,35 @@ Keywords: .NET, ASP.NET Core, SignalR, Python, PostGIS, GeoJSON, Shapefile, GeoP
 
 ### Geospatial MCP Services
 
-A Docker-ready Model Context Protocol services repo for geospatial assistant tools. The first MCP service supports selecting a point on a map and using GeoNames and Wikipedia-style lookup workflows to discover nearby geographic context.
+A Docker-ready Model Context Protocol services repo for geospatial assistant tools. It includes GeoNames/Wikipedia point exploration and deterministic incident analysis for selected map coordinates.
 
-How it fits: this repo adds AI-assistant tooling around the map experience. It can eventually connect map clicks from the status board to MCP tools that enrich locations with names, nearby places, summaries, and search links.
+How it fits: this repo adds AI-assistant tooling around the map experience. It defines MCP tools that can enrich locations with names, nearby places, incident context, risk scoring, recommended actions, summaries, and search links.
 
-Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [README](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md) · [GeoNames/Wikipedia MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia) 
+Links: [Repo](https://github.com/JosephDillard/geospatial-mcp-services) · [README](https://github.com/JosephDillard/geospatial-mcp-services/blob/master/README.md) · [GeoNames/Wikipedia MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/geonames_wikipedia) · [Incident Analyst MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst)
 
-Keywords: MCP, Docker, GeoNames, Wikipedia, map click, geospatial context, tool calling, LLM tools, stdio
+Keywords: MCP, Docker, GeoNames, Wikipedia, incident analysis, map click, geospatial context, tool calling, LLM tools, stdio
+
+### Geospatial ETL Validation Toolkit
+
+Python validation toolkit for incoming geospatial files before they are loaded into PostGIS, published through GeoServer, or handed to application teams. It validates GeoJSON, CSV, GeoPackage, Shapefile, and GeoTIFF inputs; applies required-field and domain checks; and generates readiness reports.
+
+How it fits: this repo is the data-quality gate for the stack. It can validate customer handoff data before the data gateway loads it or before the status board depends on it.
+
+Links: [Repo](https://github.com/JosephDillard/geospatial-etl-validation-toolkit) · [README](https://github.com/JosephDillard/geospatial-etl-validation-toolkit/blob/main/README.md)
+
+Keywords: Python, GeoPandas, Pyogrio, PostGIS, GeoPackage, Shapefile, GeoTIFF, COG readiness, data QA, batch reporting
+
+### Map-to-AI Incident Analyst
+
+A reviewer-friendly MapLibre incident review and bridge demo for northern New Mexico. It shows risk scoring, MGRS tools, response-support lookup, and the boundary between operational map behavior and MCP-backed incident context.
+
+How it fits: this repo proves the focused incident-analysis workflow that the status board can call from its shared map. It is also a stepping stone toward an OpenCLAW-style map command assistant where natural-language prompts become reviewed, allow-listed map actions.
+
+Links: [Incident Analyst MCP](https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst) · [Status Board Architecture](https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md)
+
+Publication note: the standalone bridge/demo repo is currently a local checkout without a public GitHub remote, so the public site links to the related MCP and status-board architecture until that repo is published.
+
+Keywords: MapLibre, MCP bridge, incident review, MGRS, OpenStreetMap, response support, risk scoring, prompt-to-action roadmap
 
 ---
 ## GIS Architecture, Development & GeoAI References

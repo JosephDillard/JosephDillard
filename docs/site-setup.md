@@ -36,7 +36,8 @@ Then open the local URL printed by Jekyll.
 
 ## Content To Customize Next
 
-- Replace starter project blurbs with sharper case-study outcomes.
+- Keep `_data/projects.yml` aligned with the public companion repos whenever a
+  README or project scope changes.
+- Add project screenshots from running applications as each project matures.
 - Add a professional headshot or architecture diagram if desired.
 - Add specific target role titles and preferred work arrangements.
-- Add project screenshots from running applications as each project matures.

@@ -64,11 +64,11 @@ body_class: home
   <div class="section__header">
     <p class="eyebrow">Selected Work</p>
     <h2 id="project-heading">Geospatial project stack</h2>
-    <p>A connected set of public projects focused on spatial intelligence, PostGIS-backed workflows, live map updates, and map-aware assistant tooling.</p>
+    <p>A connected set of public projects focused on spatial intelligence, data readiness, PostGIS-backed workflows, live map updates, and map-aware assistant tooling.</p>
   </div>
 
   <div class="project-grid">
-    {% for project in site.data.projects limit: 4 %}
+    {% for project in site.data.projects limit: 6 %}
       <article class="project-card">
         <p class="project-card__subtitle">{{ project.subtitle }}</p>
         <h3>{{ project.title }}</h3>
@@ -93,7 +93,7 @@ body_class: home
   <div class="visual-copy">
     <p class="eyebrow">Public Proof</p>
     <h2 id="evidence-heading">A portfolio built around real systems.</h2>
-    <p>The public work here is centered on geospatial architecture, local GIS stacks, browser map operations, data gateways, and emerging assistant workflows. The goal is not just to list technologies, but to show how they fit together.</p>
+    <p>The public work here is centered on geospatial architecture, local GIS stacks, browser map operations, data validation, data gateways, and emerging assistant workflows. The goal is not just to list technologies, but to show how they fit together.</p>
     <a class="button button--primary" href="{{ '/resume/' | relative_url }}">Read resume highlights</a>
   </div>
   <figure class="image-frame">

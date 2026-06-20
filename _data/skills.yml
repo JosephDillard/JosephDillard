@@ -9,6 +9,7 @@
     - Utility Network
     - QGIS
     - GeoServer
+    - MapLibre
     - GeoPandas
 
 - group: Cloud and Infrastructure
@@ -32,7 +33,11 @@
     - SQL
     - PL/SQL
     - GeoJSON
+    - GeoPackage
+    - Shapefile
+    - Cloud Optimized GeoTIFF
     - Geospatial ETL
+    - Data validation
     - Automation
 
 - group: Software Delivery
@@ -47,9 +52,22 @@
     - Grails
     - REST APIs
     - SOAP APIs
+    - MCP
+    - SignalR
     - Maven
     - Gradle
     - Git/GitHub
+
+- group: GeoAI and Assistant Workflows
+  items:
+    - GeoAI workflow design
+    - Semantic segmentation
+    - Model serving
+    - LLM-assisted map workflows
+    - MCP tool design
+    - Prompt-to-action planning
+    - Human-in-the-loop review
+    - Explainable risk scoring
 
 - group: Delivery Leadership
   items:
