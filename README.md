@@ -5,7 +5,7 @@ This repository now includes a GitHub Pages / Jekyll portfolio site for job sear
 
 Screenshot documentation: [Project screenshots](https://josephdillard.github.io/JosephDillard/screenshots/)
 
-[Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Solution_Architect_Resume_v3.docx)
+[Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Enterprise_GIS_Architect_Resume_V7.pdf)
 
 
 ## Geospatial / GeoAI Project Stack
