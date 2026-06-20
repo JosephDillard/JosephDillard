@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Docker mode network diagram for the geospatial portfolio stack</title>
+  <desc id="desc">Shows Docker Compose service groups for Status Board infrastructure, Data Gateway, GeoAI, and MCP services.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#315f9f"/>
+    </marker>
+    <style>
+      .bg { fill: #f7fbff; }
+      .panel { fill: #ffffff; stroke: #c8d8e7; stroke-width: 2; rx: 18; }
+      .compose { fill: #f6f8f7; stroke: #9fb6c8; stroke-width: 2; rx: 18; }
+      .node { fill: #ffffff; stroke: #9fb6c8; stroke-width: 2; rx: 12; }
+      .main { fill: #eaf3f1; stroke: #2f7d64; }
+      .data { fill: #edf4ff; stroke: #315f9f; }
+      .warn { fill: #fff5e8; stroke: #b76e24; }
+      .assist { fill: #f2edff; stroke: #7a4fc2; }
+      .title { fill: #132221; font: 700 34px Arial, sans-serif; }
+      .subtitle { fill: #52615f; font: 18px Arial, sans-serif; }
+      .label { fill: #132221; font: 700 19px Arial, sans-serif; }
+      .small { fill: #52615f; font: 15px Arial, sans-serif; }
+      .port { fill: #215744; font: 700 14px Arial, sans-serif; }
+      .line { fill: none; stroke: #315f9f; stroke-width: 3; marker-end: url(#arrow); }
+      .softline { fill: none; stroke: #7d93a6; stroke-width: 2.5; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="900"/>
+  <text class="title" x="60" y="62">Docker Mode: Containerized Infrastructure And Services</text>
+  <text class="subtitle" x="60" y="92">The compose files expose container ports to the host while containers talk to each other through Docker DNS names such as postgis and geoserver.</text>
+
+  <rect class="panel" x="45" y="125" width="1310" height="715"/>
+  <text class="label" x="75" y="170">Host browser and developer tools</text>
+  <text class="small" x="75" y="196">Published ports make container services reachable from the browser, Grails dev app, API clients, and docs links.</text>
+
+  <rect class="node main" x="80" y="245" width="250" height="95"/>
+  <text class="label" x="105" y="282">Reviewer Browser</text>
+  <text class="small" x="105" y="308">Status Board, GeoAI docs, APIs</text>
+
+  <rect class="node main" x="80" y="395" width="250" height="95"/>
+  <text class="label" x="105" y="432">Grails App</text>
+  <text class="small" x="105" y="460">Often still host-run in dev</text>
+  <text class="port" x="105" y="483">localhost:18088</text>
+
+  <rect class="compose" x="385" y="225" width="390" height="485"/>
+  <text class="label" x="415" y="265">Status Board Docker Compose</text>
+  <text class="small" x="415" y="292">geospatial-status-board/docker-compose.yml</text>
+
+  <rect class="node data" x="420" y="325" width="315" height="82"/>
+  <text class="label" x="445" y="358">gsb-postgis</text>
+  <text class="small" x="445" y="383">PostGIS database</text>
+  <text class="port" x="620" y="383">5432:5432</text>
+
+  <rect class="node data" x="420" y="435" width="315" height="82"/>
+  <text class="label" x="445" y="468">gsb-geoserver</text>
+  <text class="small" x="445" y="493">WFS/WMS service publication</text>
+  <text class="port" x="620" y="493">8081:8080</text>
+
+  <rect class="node data" x="420" y="545" width="315" height="82"/>
+  <text class="label" x="445" y="578">gsb-geoai</text>
+  <text class="small" x="445" y="603">Optional GeoAI profile</text>
+  <text class="port" x="620" y="603">8000:8000</text>
+
+  <rect class="compose" x="835" y="225" width="415" height="310"/>
+  <text class="label" x="865" y="265">Data Gateway Docker Compose</text>
+  <text class="small" x="865" y="292">geospatial-data-gateway/docker-compose.yml</text>
+
+  <rect class="node warn" x="870" y="325" width="335" height="82"/>
+  <text class="label" x="895" y="358">gdg-postgis</text>
+  <text class="small" x="895" y="383">Gateway metadata and feature DB</text>
+  <text class="port" x="895" y="403">5432:5432</text>
+
+  <rect class="node warn" x="870" y="435" width="335" height="82"/>
+  <text class="label" x="895" y="468">gdg-api</text>
+  <text class="small" x="895" y="493">Datasets, ingest jobs, SignalR hub</text>
+  <text class="port" x="895" y="513">7070:8080</text>
+
+  <rect class="compose" x="835" y="575" width="415" height="135"/>
+  <text class="label" x="865" y="615">MCP Services Compose</text>
+  <text class="small" x="865" y="642">geonames-wikipedia + incident-analyst</text>
+  <text class="port" x="865" y="675">stdio containers launched by MCP host</text>
+
+  <path class="line" d="M330 292 C360 292 370 292 385 292"/>
+  <path class="line" d="M330 442 C358 442 370 442 385 442"/>
+  <path class="softline" d="M735 366 C785 366 815 366 870 366"/>
+  <path class="softline" d="M735 476 C790 476 810 476 870 476"/>
+  <path class="softline" d="M735 586 C790 600 815 625 835 642"/>
+  <path class="softline" d="M1038 435 C1038 420 1038 410 1038 407"/>
+  <path class="softline" d="M578 407 C578 420 578 425 578 435"/>
+  <path class="softline" d="M578 517 C578 530 578 535 578 545"/>
+
+  <text class="small" x="75" y="770">Note: the current Docker story is service-oriented, not a single all-in-one production deployment.</text>
+  <text class="small" x="75" y="800">The diagram shows the real compose boundaries and the ports a reviewer should expect in local Docker testing.</text>
+  <text class="small" x="75" y="830">Port 5432 can be owned by one compose stack at a time unless the environment changes POSTGIS_PORT or POSTGRES_PORT.</text>
+</svg>

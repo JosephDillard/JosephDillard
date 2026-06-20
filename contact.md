@@ -8,7 +8,7 @@ body_class: contact-page
 <section class="page-hero">
   <p class="eyebrow">Contact</p>
   <h1>Looking for Enterprise GIS, Azure, GeoAI, and geospatial architecture roles.</h1>
-  <p>I am especially interested in teams building serious geospatial systems: ArcGIS Enterprise, cloud/hybrid architecture, utility GIS, mobile GIS, spatial data pipelines, operational maps, and GeoAI-enabled workflows.</p>
+  <p>I am especially interested in teams building serious geospatial systems: ArcGIS Enterprise, cloud/hybrid architecture, utility GIS, mobile GIS, spatial data pipelines, operational maps, open-source GIS, and GeoAI-aware workflows.</p>
 </section>
 
 <section class="section section--no-top section--split" aria-labelledby="contact-heading">
@@ -25,7 +25,9 @@ body_class: contact-page
       <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn profile</a>
       <a href="https://github.com/{{ site.author.github }}">GitHub profile</a>
       <a href="{{ site.resume.pdf | relative_url }}">Resume PDF</a>
-      <a href="{{ site.resume.docx | relative_url }}">Resume DOCX</a>
+      <a href="{{ '/projects/' | relative_url }}">Repository explanations</a>
+      <a href="{{ '/architecture/' | relative_url }}">Architecture diagrams</a>
+      <a href="{{ '/screenshots/' | relative_url }}">Function screenshots</a>
     </div>
   </div>
 </section>

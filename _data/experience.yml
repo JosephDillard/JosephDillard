@@ -1,38 +1,59 @@
 - organization: TRC Companies - Lemur Team
   title: GIS Solutions Architect / Enterprise GIS Consultant
   dates: Sept 2023 - Mar 2026
+  location: Remote / Utility Customers
   bullets:
-    - Assessed utility customer readiness for Lemur mobile GIS workflows, including ArcGIS Enterprise services, data architecture, and operational fit.
-    - Supported ArcGIS Pro, ArcGIS Server, PostgreSQL/PostGIS, Utility Network, service publishing, mobile application consumption, and deployment readiness.
-    - Helped customers understand service dependencies, testing procedures, training needs, and production handoff requirements.
+    - Consulted with electric utility customers to assess Enterprise GIS readiness for Lemur mobile GIS workflows, focusing on ArcGIS Enterprise service reliability, data architecture, field usability, and operational fit.
+    - Worked across ArcGIS Pro, ArcGIS Server, PostgreSQL/PostGIS, ArcGIS Utility Network, and the Lemur GIS application to support enterprise GIS integration, service consumption, and mobile application workflows.
+    - Reviewed customer Enterprise GIS configurations, service dependencies, database and service readiness, data behavior, and performance constraints before production-oriented mobile workflow deployments.
+    - Partnered with GIS architects, developers, customer technical teams, and application stakeholders to troubleshoot service, data, workflow, and performance issues affecting deployment readiness.
+    - Supported training and customer enablement by explaining application workflows, GIS service dependencies, testing procedures, operational handoff needs, and production support considerations.
+    - Participated in application, service, and workflow testing to validate functionality, performance, data behavior, mobile usability, and customer readiness for enterprise utility GIS operations.
 
-- organization: L3Harris Technologies - Greenville, TX
+- organization: L3Harris Technologies
   title: Scientist, System Engineer - GIS Solutions Architect
   dates: Aug 2021 - Aug 2023
+  location: Greenville, TX
   bullets:
-    - Designed and configured commercial and open-source GIS server systems for internal research and development initiatives.
-    - Led use-case and requirements discovery for GIS systems, aligning architecture with stakeholder and mission needs.
-    - Built automated geospatial data pipelines using NiFi and GeoPandas to convert GeoJSON into Oracle Spatial.
+    - Designed and configured commercial and open-source GIS server systems, including GeoServer-oriented architecture evaluation, for internal research and development initiatives supporting defense-oriented geospatial and signal intelligence environments.
+    - Led use-case and requirements discovery for commercial and internal GIS systems under development, aligning system architecture with mission needs, stakeholder priorities, data availability, and integration constraints.
+    - Researched, tested, and evaluated GIS server software for signal intelligence system environments, balancing capability, integration fit, operational constraints, security considerations, and production readiness.
+    - Coordinated acquisition of GIS datasets from DoD agencies and supported integration into enterprise geospatial systems requiring reliable ingest, transformation, data management, and service delivery.
+    - Built automated geospatial data pipelines using Apache NiFi and GeoPandas to convert GeoJSON into Oracle Spatial, reducing manual ingest effort and improving repeatability of data acquisition workflows.
+    - Applied Enterprise GIS architecture judgment across GeoServer, open-source Enterprise GIS architecture, Esri-oriented systems, Oracle Spatial, data pipelines, and mission-focused operational environments.
 
 - organization: CACI International Inc. / U.S. Forces Korea
   title: GIS System Architect - GIS Developer
   dates: Jan 2013 - May 2021
+  location: Korea
   bullets:
-    - Architected and led development of an ArcGIS-based situational awareness/common operating picture platform for Pacific Air Forces and U.S. Forces Korea.
-    - Guided four major architecture revisions over 8 years, supporting more than 50 custom applications, map views, and dashboards.
+    - Architected and led development of an ArcGIS-based situational awareness and common operating picture platform used by Pacific Air Forces and U.S. Forces Korea for mission planning, operational awareness, exercises, simulations, and planning conferences.
+    - Designed system architecture from inception through four major revisions over eight years, including infrastructure, ArcGIS services, enterprise geodatabases, application patterns, performance strategy, release planning, and support model.
+    - Supported more than 50 custom applications, map views, and dashboards that combined commander-reported data across echelons into operational products for faster analysis and decision-making.
+    - Delivered hands-on GIS web development and platform integration using ArcGIS Server/Portal, ArcGIS JS API, Java, JavaScript, TypeScript/Angular, Grails, REST/SOAP services, Oracle/ArcSDE data, and related enterprise application patterns.
+    - Led two major architecture and application releases each year, coordinating requirements, development priorities, testing, deployment readiness, training needs, stakeholder communication, and operational support.
+    - Translated ambiguous product owner and mission stakeholder needs into practical requirements, workflows, MVP-based delivery plans, sprint priorities, data models, dashboards, and deployable capabilities.
+    - Provided technical direction and mentoring for system administrators, web developers, GIS administrators, and database-focused team members maintaining ArcGIS services, Oracle data, and custom applications.
     - Maintained zero downtime due to technical failure during major use events with up to 2,900 unique users and observed load up to 20,000 ArcGIS Server requests per minute.
 
-- organization: CACI International Inc. - Osan Air Base, Korea
+- organization: CACI International Inc.
   title: Senior GIS Analyst - GIS System Administrator
   dates: Feb 2004 - Jan 2013
+  location: Osan Air Base, Korea
   bullets:
-    - Administered ArcGIS Server, ArcIMS/IMF, and ArcSDE Oracle database servers across multiple enterprise networks.
-    - Delivered 24/7 technical support for enterprise GIS operations and operational exercise support.
-    - Managed Windows Server and VMware vSphere virtual machines supporting enterprise GIS services.
+    - Administered ArcGIS Server, ArcIMS/IMF, and ArcSDE Oracle database servers across multiple enterprise networks supporting Air Force and U.S. Forces Korea geospatial operations.
+    - Led architecture changes to system hardware and software configurations and delivered 24/7 technical support for Enterprise GIS operations with exercise, contingency, and mission-support requirements.
+    - Maintained and disseminated geospatial data in support of Air Force Enterprise GIS Architecture and expeditionary GeoReach requirements, keeping operational users supplied with current geospatial information.
+    - Managed Windows Server and VMware vSphere virtual machines supporting GIS services, application hosting, database connectivity, operational support, and enterprise system availability.
+    - Performed commercial and NGA imagery processing using ERDAS IMAGINE and provided limited Trimble survey support for operational and data maintenance requirements.
+    - Supported ArcGIS services, Oracle spatial data, networked GIS environments, data publication, troubleshooting, user support, and operational exercise readiness across multiple networks.
 
 - organization: U.S. Army
   title: Production Manager and GEOINT Analyst
   dates: Apr 2000 - Feb 2004
+  location: U.S. Army
   bullets:
-    - Managed mission-critical GIS-driven product development, map production, topographic operations, QA, and imagery support.
-    - Supervised personnel, authored standard operating procedures, trained users, and produced more than 375 GIS and map-based documents.
+    - Managed mission-critical GIS-driven product development, map production, topographic operations, quality assurance, imagery support, and geospatial information delivery for operational missions.
+    - Supervised personnel, provided technical guidance, authored standard operating procedures, and trained users on imagery and GIS equipment.
+    - Produced more than 375 GIS and map-based documents while improving team productivity, collaboration, training capability, and access to critical geospatial information.
+    - Applied imagery analysis, terrain analysis, cartographic production, database management, quality assurance, and operational support practices in high-tempo mission environments.

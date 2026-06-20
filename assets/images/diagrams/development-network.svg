@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Development mode network diagram for the geospatial portfolio stack</title>
+  <desc id="desc">Shows host-run development services, optional local GIS infrastructure, and how the portfolio repositories connect.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#315f9f"/>
+    </marker>
+    <style>
+      .bg { fill: #f7fbff; }
+      .panel { fill: #ffffff; stroke: #c8d8e7; stroke-width: 2; rx: 18; }
+      .node { fill: #f6f8f7; stroke: #9fb6c8; stroke-width: 2; rx: 14; }
+      .main { fill: #eaf3f1; stroke: #2f7d64; }
+      .data { fill: #edf4ff; stroke: #315f9f; }
+      .warn { fill: #fff5e8; stroke: #b76e24; }
+      .assist { fill: #f2edff; stroke: #7a4fc2; }
+      .title { fill: #132221; font: 700 34px Arial, sans-serif; }
+      .subtitle { fill: #52615f; font: 18px Arial, sans-serif; }
+      .label { fill: #132221; font: 700 20px Arial, sans-serif; }
+      .small { fill: #52615f; font: 15px Arial, sans-serif; }
+      .port { fill: #215744; font: 700 14px Arial, sans-serif; }
+      .line { fill: none; stroke: #315f9f; stroke-width: 3; marker-end: url(#arrow); }
+      .softline { fill: none; stroke: #7d93a6; stroke-width: 2.5; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="900"/>
+  <text class="title" x="60" y="62">Development Mode: Host-Run Services</text>
+  <text class="subtitle" x="60" y="92">Default local path keeps the Status Board on H2, while optional PostGIS, GeoServer, GeoAI, gateway, and MCP services run beside it as needed.</text>
+
+  <rect class="panel" x="45" y="125" width="1310" height="715"/>
+  <text class="label" x="75" y="170">Windows host / developer workstation</text>
+  <text class="small" x="75" y="196">Repos live under C:\Users\josep\OneDrive\Documents\GitHub</text>
+
+  <rect class="node main" x="80" y="245" width="250" height="95"/>
+  <text class="label" x="105" y="282">Reviewer Browser</text>
+  <text class="small" x="105" y="308">GitHub Pages, app UIs, API docs</text>
+
+  <rect class="node data" x="410" y="225" width="310" height="125"/>
+  <text class="label" x="438" y="262">Geospatial Status Board</text>
+  <text class="small" x="438" y="290">Grails + MapLibre shared map</text>
+  <text class="port" x="438" y="320">localhost:18088/GeoStatusBoard</text>
+
+  <rect class="node data" x="790" y="225" width="255" height="125"/>
+  <text class="label" x="818" y="262">H2 Dev Database</text>
+  <text class="small" x="818" y="290">Default no-Docker path</text>
+  <text class="port" x="818" y="320">embedded in app</text>
+
+  <rect class="node data" x="410" y="405" width="310" height="125"/>
+  <text class="label" x="438" y="442">GeoAI Platform</text>
+  <text class="small" x="438" y="470">FastAPI workflow and training UI</text>
+  <text class="port" x="438" y="500">localhost:8000</text>
+
+  <rect class="node data" x="785" y="405" width="310" height="125"/>
+  <text class="label" x="813" y="442">Data Gateway API</text>
+  <text class="small" x="813" y="470">Dataset jobs + SignalR refresh</text>
+  <text class="port" x="813" y="500">localhost:7070</text>
+
+  <rect class="node assist" x="410" y="585" width="310" height="125"/>
+  <text class="label" x="438" y="622">Incident Analyst Bridge</text>
+  <text class="small" x="438" y="650">Focused map review and bridge routes</text>
+  <text class="port" x="438" y="680">127.0.0.1:8775/incident-analyst</text>
+
+  <rect class="node assist" x="785" y="585" width="310" height="125"/>
+  <text class="label" x="813" y="622">MCP Services</text>
+  <text class="small" x="813" y="650">GeoNames/Wikipedia + incident tools</text>
+  <text class="port" x="813" y="680">stdio tools launched by host</text>
+
+  <rect class="node warn" x="1125" y="245" width="185" height="105"/>
+  <text class="label" x="1152" y="282">PostGIS</text>
+  <text class="small" x="1152" y="310">Optional local GIS</text>
+  <text class="port" x="1152" y="335">localhost:5432</text>
+
+  <rect class="node warn" x="1125" y="405" width="185" height="105"/>
+  <text class="label" x="1152" y="442">GeoServer</text>
+  <text class="small" x="1152" y="470">Optional WFS/WMS</text>
+  <text class="port" x="1152" y="495">localhost:8081</text>
+
+  <rect class="node warn" x="1125" y="585" width="185" height="105"/>
+  <text class="label" x="1152" y="622">ETL Toolkit</text>
+  <text class="small" x="1152" y="650">CLI validation + reports</text>
+  <text class="port" x="1152" y="675">local Python command</text>
+
+  <path class="line" d="M330 292 C360 292 375 292 410 292"/>
+  <path class="line" d="M720 292 C748 292 760 292 790 292"/>
+  <path class="softline" d="M720 320 C880 365 980 292 1125 292"/>
+  <path class="softline" d="M1045 468 C1090 468 1095 468 1125 468"/>
+  <path class="softline" d="M720 468 C742 468 760 468 785 468"/>
+  <path class="softline" d="M720 648 C742 648 760 648 785 648"/>
+  <path class="softline" d="M1095 648 C1110 648 1115 648 1125 648"/>
+  <path class="softline" d="M940 530 C940 555 940 565 940 585"/>
+  <path class="softline" d="M565 350 C565 370 565 385 565 405"/>
+  <path class="softline" d="M565 530 C565 555 565 565 565 585"/>
+
+  <text class="small" x="75" y="805">Main idea: the local dev path is easy to start and review. Docker-backed services are optional unless testing PostGIS, GeoServer, GeoAI containers, or gateway integration.</text>
+</svg>

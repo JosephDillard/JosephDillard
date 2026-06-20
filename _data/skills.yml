@@ -1,20 +1,49 @@
-- group: Enterprise GIS
+- group: Enterprise GIS / Esri
   items:
     - ArcGIS Enterprise
     - ArcGIS Server
     - Portal for ArcGIS
     - ArcGIS Pro
     - ArcSDE
+    - ArcGIS Desktop
+    - ArcGIS Online
     - ArcGIS JS API
+    - ArcGIS GeoEvent Server
     - Utility Network
-    - QGIS
-    - GeoServer
-    - MapLibre
-    - GeoPandas
+    - Enterprise geodatabases
+    - Feature services
+    - Map services
+    - Dashboards
+    - Mobile GIS
+    - Common operating picture
+    - Situational awareness
 
-- group: Cloud and Infrastructure
+- group: Open Source Enterprise GIS
+  items:
+    - GeoServer
+    - QGIS
+    - PostGIS
+    - GeoPandas
+    - GeoJSON
+    - Open-source GIS server evaluation
+    - GeoServer-based service architecture
+    - Geospatial data processing
+    - Raster/vector concepts
+    - Spatial analytics
+    - Coordinate workflows
+    - Reference data workflows
+    - MapLibre
+
+- group: Cloud / Infrastructure
   items:
     - Microsoft Azure
+    - Azure architecture
+    - Azure administration
+    - Azure networking
+    - Azure compute
+    - Azure storage
+    - Azure governance
+    - AWS working knowledge
     - Docker
     - Windows Server
     - Linux/Unix
@@ -23,44 +52,104 @@
     - Apache Tomcat
     - Enterprise hosting
     - Capacity planning
+    - High availability
+    - Hybrid infrastructure
 
-- group: Spatial Data
+- group: Data / Spatial Databases
   items:
     - PostgreSQL/PostGIS
-    - Oracle Database
+    - Oracle Database 11g/12c/21c
     - Oracle Spatial
     - MySQL
     - SQL
     - PL/SQL
+    - ArcSDE administration
+    - Schemas
+    - Domains
+    - Subtypes
+    - Data readiness
+    - Data quality
     - GeoJSON
-    - GeoPackage
-    - Shapefile
-    - Cloud Optimized GeoTIFF
-    - Geospatial ETL
-    - Data validation
-    - Automation
+    - CSV/Excel workflows
+    - Imagery data
+    - NGA imagery
+    - Commercial imagery
+    - ERDAS IMAGINE
 
-- group: Software Delivery
+- group: Development / APIs
   items:
     - Java
     - JavaScript
+    - TypeScript
+    - Angular
     - Python
     - C#
-    - Angular
     - Node.js
     - Spring Boot
+    - Spring Security
     - Grails
+    - Hibernate/GORM
     - REST APIs
     - SOAP APIs
-    - MCP
-    - SignalR
+    - HTML/CSS
+    - PrimeNG
     - Maven
     - Gradle
     - Git/GitHub
+    - IntelliJ IDEA
+    - Eclipse IDE
+    - Visual Studio Code
+    - Codex / AI-assisted development
 
-- group: GeoAI and Assistant Workflows
+- group: Integration / ETL / Automation
   items:
-    - GeoAI workflow design
+    - Apache NiFi
+    - Apache Kafka
+    - ArcGIS GeoEvent Server
+    - Geospatial ETL
+    - Event-driven GIS patterns
+    - GeoJSON-to-Oracle Spatial pipelines
+    - API integration
+    - Data ingestion
+    - Automation scripts
+    - Service validation
+    - Data validation
+    - Repeatable ingest workflows
+    - Pipeline testing
+    - SignalR
+    - MCP
+
+- group: Delivery / Security / Quality
+  items:
+    - Agile/Scrum
+    - Jira
+    - Confluence
+    - UML
+    - Lucidchart
+    - Requirements discovery
+    - MVP delivery
+    - Architecture tradeoffs
+    - CI/CD concepts
+    - JMeter
+    - Xcode Instruments
+    - Training
+    - Testing
+    - Production readiness
+    - Operational handoff
+    - RMF-aware environments
+    - Security+ CE
+    - DoD 8570-aligned environments
+
+- group: GeoAI / AI Exposure
+  items:
+    - Microsoft AI Skills Fest
+    - Azure AI learning
+    - AI-assisted development workflows
+    - GeoAI/ML concepts
+    - Python/GeoPandas geospatial analytics
+    - Raster/vector ML awareness
+    - Data preparation for analytics/ML
+    - Remote sensing background
     - Semantic segmentation
     - Model serving
     - LLM-assisted map workflows
@@ -68,14 +157,3 @@
     - Prompt-to-action planning
     - Human-in-the-loop review
     - Explainable risk scoring
-
-- group: Delivery Leadership
-  items:
-    - Requirements discovery
-    - Solution architecture
-    - MVP delivery
-    - Agile/Scrum
-    - Jira/Confluence
-    - Testing
-    - Training
-    - RMF-aware environments

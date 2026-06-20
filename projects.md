@@ -1,25 +1,47 @@
 ---
 title: Projects
-description: Public geospatial, GeoAI, PostGIS, and map operations projects by Joseph C. Dillard.
+description: Public and local geospatial, GeoAI, PostGIS, MCP, data gateway, and portfolio repositories by Joseph C. Dillard.
 permalink: /projects/
 body_class: projects-page
 ---
 
 <section class="page-hero">
   <p class="eyebrow">Projects</p>
-  <h1>Public geospatial systems, built as a connected stack.</h1>
-  <p>These projects showcase the work I want employers to see first: architecture thinking, spatial data movement, open-source GIS, ArcGIS-adjacent workflows, live map operations, and practical AI-assistant extensions.</p>
+  <h1>All portfolio repos, explained as one geospatial system.</h1>
+  <p>These repositories are designed to be reviewed both individually and as a connected stack: validation, GeoAI processing, data gateway ingestion, PostGIS/GeoServer publication, operational mapping, MCP assistant tools, and public documentation.</p>
+  <div class="hero__actions">
+    <a class="button button--primary" href="{{ '/architecture/' | relative_url }}">View architecture diagrams</a>
+    <a class="button button--secondary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
+  </div>
 </section>
 
-<section class="section section--no-top" aria-label="Project list">
+<section class="section section--no-top" aria-labelledby="stack-flow-heading">
+  <div class="section__header">
+    <p class="eyebrow">System Story</p>
+    <h2 id="stack-flow-heading">From incoming data to operational map review.</h2>
+    <p>The core stack is intentionally practical: validate data, create spatial intelligence, load and notify, visualize, then enrich map context through assistant tools.</p>
+  </div>
+  <div class="flow-strip" aria-label="Repository flow">
+    <span>ETL validation</span>
+    <span>GeoAI processing</span>
+    <span>Data gateway</span>
+    <span>PostGIS / GeoServer</span>
+    <span>Status Board map</span>
+    <span>MCP tools</span>
+  </div>
+</section>
+
+<section class="section" aria-label="Repository list">
   <div class="project-list">
     {% for project in site.data.projects %}
       <article class="project-row">
         <div>
           <p class="project-card__subtitle">{{ project.subtitle }}</p>
           <h2>{{ project.title }}</h2>
+          <p class="repo-status">{{ project.status }}{% if project.repo %} - <code>{{ project.repo }}</code>{% endif %}</p>
           <p>{{ project.summary }}</p>
           <p class="project-card__impact">{{ project.impact }}</p>
+          <p><strong>How it fits:</strong> {{ project.fit }}</p>
         </div>
         <div class="project-row__meta">
           <div class="tag-list" aria-label="{{ project.title }} technologies">

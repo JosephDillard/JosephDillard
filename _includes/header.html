@@ -11,6 +11,7 @@
     {% assign current_url = page.url | replace: 'index.html', '' %}
     <a href="{{ '/' | relative_url }}" {% if current_url == '/' %}aria-current="page"{% endif %}>Home</a>
     <a href="{{ '/projects/' | relative_url }}" {% if current_url == '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+    <a href="{{ '/architecture/' | relative_url }}" {% if current_url == '/architecture/' %}aria-current="page"{% endif %}>Architecture</a>
     <a href="{{ '/screenshots/' | relative_url }}" {% if current_url == '/screenshots/' %}aria-current="page"{% endif %}>Screenshots</a>
     <a href="{{ '/skills/' | relative_url }}" {% if current_url == '/skills/' %}aria-current="page"{% endif %}>Skills</a>
     <a href="{{ '/resume/' | relative_url }}" {% if current_url == '/resume/' %}aria-current="page"{% endif %}>Resume</a>

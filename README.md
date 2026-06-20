@@ -1,9 +1,11 @@
 
 [Portfolio Site: Enterprise GIS & Azure Solution Architect](https://josephdillard.github.io/JosephDillard/)
 
-This repository now includes a GitHub Pages / Jekyll portfolio site for job search visibility, with pages for projects, skills, resume highlights, and contact information. Existing resume files and profile README content remain in place.
+This repository now includes a GitHub Pages / Jekyll portfolio site for job search visibility, with pages for resume sections, project/repo explanations, architecture diagrams, function screenshots, skills, and contact information. Existing resume files and profile README content remain in place.
 
 Screenshot documentation: [Project screenshots](https://josephdillard.github.io/JosephDillard/screenshots/)
+
+Architecture diagrams: [Development and Docker network views](https://josephdillard.github.io/JosephDillard/architecture/)
 
 [Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Enterprise_GIS_Architect_Resume_V7.pdf)
 

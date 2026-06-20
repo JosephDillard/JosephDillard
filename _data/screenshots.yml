@@ -1,0 +1,148 @@
+- title: Portfolio
+  description: Public-facing entry points that help a reviewer understand the project stack quickly.
+  items:
+    - subtitle: Portfolio Site
+      title: GitHub Pages portfolio
+      image: /assets/images/screenshots/portfolio-home.png
+      alt: Portfolio homepage with Enterprise GIS and Azure Solution Architect hero content.
+      description: Public landing page for resume, project stack, skills, and contact paths.
+
+- title: Operational Map Functions
+  description: Status Board map capabilities that show the visible, reviewer-facing behavior of the stack.
+  items:
+    - subtitle: Geospatial Status Board
+      title: Operational map with GeoAI layers
+      image: /assets/images/screenshots/status-board-map.png
+      alt: Geospatial Status Board map with GeoAI detections, COG footprint, LLM panel, and layer controls.
+      description: MapLibre, GeoServer, PostGIS, layer controls, GeoAI request panel, MGRS, and operational overlays in one map surface.
+    - subtitle: Status Board Function
+      title: GeoAI request panel
+      image: /assets/images/screenshots/status-board-geoai-request-tool.png
+      alt: Zoomed evidence screenshot of the Status Board GeoAI request panel.
+      description: Map-side workflow launcher for selecting a model, workflow, and current map extent before submitting a GeoAI job.
+    - subtitle: Status Board Function
+      title: GeoAI detections overlay
+      image: /assets/images/screenshots/status-board-geoai-detections-overlay.png
+      alt: Zoomed evidence screenshot of GeoAI detections and a COG footprint on the map.
+      description: Shows detected features and source footprints as map layers so model output can be reviewed spatially.
+    - subtitle: Status Board Function
+      title: Layer drawer and feature counts
+      image: /assets/images/screenshots/status-board-layer-control-drawer.png
+      alt: Zoomed evidence screenshot of the Status Board layer drawer with feature counts.
+      description: Groups internal, GeoAI, incident, weather, wildfire, and asset layers with visible loaded-feature counts.
+    - subtitle: Status Board Function
+      title: Shared map tools and MGRS readout
+      image: /assets/images/screenshots/status-board-map-tools-mgrs.png
+      alt: Zoomed evidence screenshot of shared map tools and MGRS readout.
+      description: Captures the common map tools, drawing controls, scale bar, and MGRS coordinate readout used for field-style workflows.
+    - subtitle: Feature Inspection
+      title: Map popup and layer workflow
+      image: /assets/images/screenshots/status-board-feature-popup.png
+      alt: Status Board map showing a feature popup beside the layers panel.
+      description: Feature details, configured layer categories, and reviewer-friendly map inspection on the same screen.
+    - subtitle: Incident Review
+      title: Incident and weather context
+      image: /assets/images/screenshots/status-board-incident-review.png
+      alt: Status Board map showing incident and weather overlays with popup and layer controls.
+      description: Incident mapping, layer review, weather context, and popup-driven map inspection for northern New Mexico.
+    - subtitle: Incident Review Function
+      title: Incident and asset popup inspection
+      image: /assets/images/screenshots/status-board-incident-popup-detail.png
+      alt: Zoomed evidence screenshot of an incident or asset popup inspection workflow.
+      description: Shows selected feature attributes, status, update time, and degradation fields without leaving the map.
+    - subtitle: Weather Function
+      title: NOAA radar and weather overlays
+      image: /assets/images/screenshots/status-board-weather-overlay.png
+      alt: Status Board map with NOAA radar and weather-related overlays visible.
+      description: Adds external weather context to the same operational map used for assets, incidents, and GeoAI layers.
+
+- title: GeoAI Workflow Functions
+  description: GeoAI workflow surfaces that show how imagery processing becomes GIS-ready output.
+  items:
+    - subtitle: GeoAI Function
+      title: COG to detection pipeline
+      image: /assets/images/screenshots/geoai-processing-pipeline.png
+      alt: Evidence screenshot of the COG to detection workflow pipeline.
+      description: Documents the imagery-to-tiles-to-model-to-vectors path that feeds GeoPackage or PostGIS outputs.
+    - subtitle: GeoAI Asset Detection Platform
+      title: Workflow API documentation
+      image: /assets/images/screenshots/geoai-api-docs.png
+      alt: GeoAI Workflow API documentation page showing workflow endpoints.
+      description: FastAPI/OpenAPI surface for configured GeoAI workflow execution and training export routes.
+    - subtitle: GeoAI Training
+      title: Training export page
+      image: /assets/images/screenshots/geoai-training-export.png
+      alt: GeoAI training export page with training package controls.
+      description: No-login web page for preparing training packages and reviewer-friendly model data handoffs.
+
+- title: Data Gateway Functions
+  description: API and event-control evidence for moving validated geospatial data into live map workflows.
+  items:
+    - subtitle: Geospatial Data Gateway
+      title: Live API health evidence
+      image: /assets/images/screenshots/data-gateway-health.png
+      alt: Geospatial Data Gateway health endpoint evidence card.
+      description: Service health proof for the ingest and SignalR-style live map refresh control plane.
+    - subtitle: Data Gateway Function
+      title: Dataset and ingest job API
+      image: /assets/images/screenshots/data-gateway-ingest-api.png
+      alt: Evidence screenshot of Data Gateway dataset and ingest job endpoints.
+      description: Registers datasets, creates ingest jobs, and tracks load metadata such as schema, table, CRS, bounds, and status.
+    - subtitle: Data Gateway Function
+      title: Live layer refresh event
+      image: /assets/images/screenshots/data-gateway-layer-refresh-contract.png
+      alt: Evidence screenshot of the Data Gateway layer refresh event contract.
+      description: Shows the SignalR event that lets browser maps refresh a layer after a PostGIS-backed ingest job is loaded.
+
+- title: MCP And Assistant Functions
+  description: Map-aware assistant tooling that keeps the MCP boundary explicit and the analysis explainable.
+  items:
+    - subtitle: Geospatial MCP Services
+      title: Map-aware tool contract
+      image: /assets/images/screenshots/mcp-tool-contract.png
+      alt: Geospatial MCP Services tool contract evidence card.
+      description: GeoNames/Wikipedia and incident-analysis MCP tools with an explicit browser-to-bridge boundary.
+    - subtitle: MCP Function
+      title: GeoNames and Wikipedia map-click lookup
+      image: /assets/images/screenshots/mcp-geonames-wikipedia-tool.png
+      alt: Evidence screenshot of the GeoNames and Wikipedia MCP map-click lookup function.
+      description: Accepts latitude and longitude from a map click and returns nearby place context, source links, and search URLs.
+    - subtitle: MCP Function
+      title: Incident risk analysis tool
+      image: /assets/images/screenshots/mcp-incident-risk-tool.png
+      alt: Evidence screenshot of the MCP incident risk analysis function.
+      description: Uses selected coordinates to return nearby incidents, nearby assets, operational risk, and recommended actions.
+
+- title: ETL Validation Functions
+  description: One screenshot per major validation function added to the geospatial ETL toolkit.
+  items:
+    - subtitle: ETL Function
+      title: GeoPackage and Shapefile validation
+      image: /assets/images/screenshots/etl-vector-validation.png
+      alt: Evidence screenshot of GeoPackage and Shapefile validation support.
+      description: Validates real GIS vector formats through GeoPandas or Pyogrio and reports CRS, geometry, field, and feature metadata.
+    - subtitle: ETL Function
+      title: Raster metadata and COG readiness
+      image: /assets/images/screenshots/etl-raster-cog-readiness.png
+      alt: Evidence screenshot of raster metadata and COG readiness checks.
+      description: Inspects GeoTIFF metadata for Cloud Optimized GeoTIFF readiness signals such as tiling, overviews, and compression.
+    - subtitle: ETL Function
+      title: Required-field and domain checks
+      image: /assets/images/screenshots/etl-required-domain-checks.png
+      alt: Evidence screenshot of required-field and domain rule validation.
+      description: Applies JSON or YAML rule files to catch missing required fields, blank values, and invalid domain values.
+    - subtitle: ETL Function
+      title: PostGIS load after validation passes
+      image: /assets/images/screenshots/etl-postgis-load-gate.png
+      alt: Evidence screenshot of the PostGIS load validation gate.
+      description: Validates first, refuses failed datasets, and supports dry-run planning before loading accepted vectors to PostGIS.
+    - subtitle: ETL Function
+      title: Markdown, JSON, and HTML reports
+      image: /assets/images/screenshots/etl-report-formats.png
+      alt: Evidence screenshot of ETL report formats and example output.
+      description: Produces readable and machine-friendly reports with status, readiness score, checks, and handoff notes.
+    - subtitle: ETL Validation Toolkit
+      title: Batch readiness summary
+      image: /assets/images/screenshots/etl-batch-summary-report.png
+      alt: Geospatial ETL Validation Toolkit batch readiness summary evidence card.
+      description: Generates a batch-level handoff summary so larger customer data deliveries can be reviewed at a glance.

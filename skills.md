@@ -1,14 +1,14 @@
 ---
 title: Skills
-description: Enterprise GIS, Azure, spatial data, software delivery, and architecture skills for Joseph C. Dillard.
+description: Enterprise GIS, open-source GIS, cloud, spatial data, software delivery, GeoAI, and architecture skills for Joseph C. Dillard.
 permalink: /skills/
 body_class: skills-page
 ---
 
 <section class="page-hero">
   <p class="eyebrow">Skills</p>
-  <h1>GIS architecture, cloud infrastructure, spatial data, and delivery leadership.</h1>
-  <p>My strongest work sits where geospatial platforms, infrastructure, databases, applications, field workflows, and customer requirements all meet.</p>
+  <h1>Enterprise GIS, cloud, spatial data, development, integration, and GeoAI-aware delivery.</h1>
+  <p>This skills matrix mirrors the V7 resume keyword matrix and groups the tools I use to connect customer workflows, geospatial platforms, infrastructure, databases, applications, and production support.</p>
 </section>
 
 <section class="section section--no-top" aria-label="Skill groups">
@@ -29,8 +29,8 @@ body_class: skills-page
 <section class="section section--split" aria-labelledby="cert-heading">
   <div>
     <p class="eyebrow">Certifications</p>
-    <h2 id="cert-heading">Current architecture focus</h2>
-    <p>Certifications and recent learning support the same direction as the project work: cloud-aware Enterprise GIS architecture and production-ready spatial systems.</p>
+    <h2 id="cert-heading">Cloud-aware Enterprise GIS architecture.</h2>
+    <p>Certifications and recent learning support the same direction as the project work: Azure and hybrid infrastructure, production-ready GIS services, geospatial data movement, and AI-aware spatial workflows.</p>
   </div>
   <div class="focus-list">
     <span>Microsoft Certified: Azure Solutions Architect Expert</span>

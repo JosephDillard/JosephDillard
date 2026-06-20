@@ -1,26 +1,10 @@
-- title: GeoAI Asset Detection Platform
-  subtitle: Python-based GeoAI workflow platform
-  summary: Repeatable geospatial asset detection and processing workflows for imagery and vector data that can feed operational mapping systems.
-  impact: Prepares spatial intelligence for PostGIS-backed services, GeoPackage output, REST workflow execution, and downstream status-board visualization.
-  tags:
-    - GeoAI
-    - Python
-    - PostGIS
-    - GeoPackage
-    - COG
-    - PyTorch
-    - ONNX
-    - GeoPandas
-  links:
-    - label: Repo
-      url: https://github.com/JosephDillard/geoai-asset-detection-platform
-    - label: README
-      url: https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md
-
 - title: Geospatial Status Board
   subtitle: Operational map viewer and status dashboard
-  summary: Grails-based map experience for incidents, infrastructure, live layers, response support, and geospatial status workflows.
-  impact: Demonstrates practical integration across MapLibre, PostGIS, GeoServer, WFS, local development, shared incident review, and browser-based operations.
+  repo: geospatial-status-board
+  status: Public GitHub repo
+  summary: Grails, MapLibre, GeoServer, and PostGIS operational status board for incidents, infrastructure, GeoAI outputs, response support, and live geospatial map workflows.
+  impact: This is the main visualization layer. It shows shared map tools, layer controls, incident review, GeoAI detections, MGRS, weather context, gateway refresh integration, and reviewer-visible operational map behavior.
+  fit: Consumes published spatial services and data gateway refresh events while exposing the browser map experience a user or reviewer can actually inspect.
   tags:
     - Grails
     - MapLibre
@@ -30,7 +14,8 @@
     - Dashboard
     - SignalR
     - MGRS
-    - LLM tools
+    - Incident mapping
+    - GeoAI layers
   links:
     - label: Repo
       url: https://github.com/JosephDillard/geospatial-status-board
@@ -39,10 +24,36 @@
     - label: Architecture
       url: https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md
 
+- title: GeoAI Asset Detection Platform
+  subtitle: Python-based GeoAI workflow platform
+  repo: geoai-asset-detection-platform
+  status: Public GitHub repo
+  summary: Python GeoAI workflow platform for tiling imagery, running segmentation models, vectorizing detections, and loading GIS-ready outputs to GeoPackage/PostGIS.
+  impact: Turns imagery and model output into spatial intelligence that can be loaded to PostGIS, published through GeoServer, and visualized in the Status Board.
+  fit: Provides the GeoAI processing side of the portfolio stack, including COG input, model workflow, vector output, training export, and operational map handoff.
+  tags:
+    - GeoAI
+    - Python
+    - PostGIS
+    - GeoPackage
+    - COG
+    - PyTorch
+    - ONNX
+    - GeoPandas
+    - FastAPI
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geoai-asset-detection-platform
+    - label: README
+      url: https://github.com/JosephDillard/geoai-asset-detection-platform/blob/main/README.md
+
 - title: Geospatial Data Gateway
   subtitle: Spatial data ingestion and notification layer
-  summary: .NET and Python gateway for loading geospatial files into PostGIS and notifying map clients when layers change.
-  impact: Bridges raw spatial data, database storage, web map refreshes, and real-time geospatial operations.
+  repo: geospatial-data-gateway
+  status: Public GitHub repo
+  summary: .NET and Python geospatial data gateway for registering datasets, loading validated layers into PostGIS, and broadcasting live map refresh events.
+  impact: Acts as the control plane between validated source data, PostGIS-backed layers, ingest job status, and live browser map refresh behavior.
+  fit: Bridges the ETL toolkit and Status Board by turning accepted data handoffs into tracked ingest jobs and map refresh events.
   tags:
     - .NET
     - ASP.NET Core
@@ -52,16 +63,43 @@
     - GeoJSON
     - Shapefile
     - GeoPackage
+    - API
   links:
     - label: Repo
       url: https://github.com/JosephDillard/geospatial-data-gateway
     - label: README
       url: https://github.com/JosephDillard/geospatial-data-gateway/blob/master/README.md
 
+- title: Geospatial ETL Validation Toolkit
+  subtitle: Data readiness and handoff reporting
+  repo: geospatial-etl-validation-toolkit
+  status: Public GitHub repo
+  summary: Python toolkit for validating GeoJSON, CSV, GeoPackage, Shapefile, and GeoTIFF inputs before PostGIS load or customer handoff.
+  impact: Shows practical geospatial data quality gates, configurable schema/domain checks, COG metadata inspection, PostGIS load planning, and batch reports.
+  fit: Provides the data readiness layer before customer data is loaded, published, or handed to downstream application teams.
+  tags:
+    - Python
+    - GeoPandas
+    - Pyogrio
+    - PostGIS
+    - GeoPackage
+    - Shapefile
+    - GeoTIFF
+    - COG readiness
+    - Data QA
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit
+    - label: README
+      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit/blob/main/README.md
+
 - title: Geospatial MCP Services
   subtitle: Map-aware assistant tooling
-  summary: Docker-ready Model Context Protocol services for enriching map clicks with nearby place context and incident analysis.
-  impact: Connects operational map interaction to AI-assistant workflows, GeoNames/Wikipedia lookup, incident scoring, and tool calling.
+  repo: geospatial-mcp-services
+  status: Public GitHub repo
+  summary: Docker-ready Model Context Protocol servers for map-aware GeoNames/Wikipedia lookup and incident risk analysis from selected coordinates.
+  impact: Connects operational map interaction to AI-assistant workflows, nearby place context, incident scoring, recommended actions, and explicit MCP tool boundaries.
+  fit: Provides the assistant/tool layer that can enrich map clicks or selected incidents without hiding the API and MCP transport boundaries.
   tags:
     - MCP
     - Docker
@@ -71,6 +109,7 @@
     - Map click
     - Geospatial context
     - LLM tools
+    - Stdio
   links:
     - label: Repo
       url: https://github.com/JosephDillard/geospatial-mcp-services
@@ -81,29 +120,13 @@
     - label: Incident Analyst MCP
       url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst
 
-- title: Geospatial ETL Validation Toolkit
-  subtitle: Data readiness and handoff reporting
-  summary: Python toolkit for validating GeoJSON, CSV, GeoPackage, Shapefile, and GeoTIFF inputs before PostGIS load or customer handoff.
-  impact: Shows practical geospatial data quality gates, configurable schema/domain checks, COG metadata inspection, PostGIS load planning, and batch reports.
-  tags:
-    - Python
-    - GeoPandas
-    - Pyogrio
-    - PostGIS
-    - GeoPackage
-    - Shapefile
-    - GeoTIFF
-    - Data QA
-  links:
-    - label: Repo
-      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit
-    - label: README
-      url: https://github.com/JosephDillard/geospatial-etl-validation-toolkit/blob/main/README.md
-
 - title: Map-to-AI Incident Analyst
-  subtitle: MCP bridge and focused map demo
-  summary: Reviewer-friendly MapLibre incident review surface for northern New Mexico with risk scoring, MGRS tools, and response-support lookup.
-  impact: Demonstrates how an operational map can package context for MCP-backed analysis while keeping incident scoring and map actions explainable.
+  subtitle: Local MCP bridge and focused map demo
+  repo: map-to-ai-incident-analyst
+  status: Local checkout, no public remote yet
+  summary: Reviewer-friendly MapLibre incident review surface for northern New Mexico with risk scoring, MGRS tools, response-support lookup, and an incident bridge endpoint.
+  impact: Demonstrates how an operational map can package context for MCP-backed analysis while keeping incident scoring, support lookups, and map actions explainable.
+  fit: Proves the focused incident-analysis workflow that the Status Board can call from its shared map and that the MCP services can support.
   tags:
     - MapLibre
     - MCP bridge
@@ -112,8 +135,64 @@
     - OpenStreetMap
     - Risk scoring
     - Python
+    - Response support
   links:
     - label: MCP server
       url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst
     - label: Status Board Architecture
       url: https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md
+
+- title: JosephDillard Portfolio Site
+  subtitle: GitHub Pages resume and project hub
+  repo: JosephDillard
+  status: Public GitHub repo
+  summary: Jekyll/GitHub Pages portfolio site for resume sections, project descriptions, screenshots, architecture diagrams, and recruiter-facing links.
+  impact: Gives hiring managers one place to see resume evidence, project screenshots, repository explanations, and how the geospatial stack fits together.
+  fit: Acts as the public documentation and navigation layer for the wider portfolio.
+  tags:
+    - GitHub Pages
+    - Jekyll
+    - Resume
+    - Portfolio
+    - Documentation
+    - Screenshots
+  links:
+    - label: Site
+      url: https://josephdillard.github.io/JosephDillard/
+    - label: Repo
+      url: https://github.com/JosephDillard/JosephDillard
+
+- title: azureResources
+  subtitle: Azure infrastructure snippets and references
+  repo: azureResources
+  status: Public GitHub repo
+  summary: Azure ARM, PowerShell, and Bicep resource examples used as an infrastructure reference area.
+  impact: Supports the cloud and hybrid infrastructure side of the resume by keeping Azure deployment notes and snippets close to the portfolio.
+  fit: Complements the Azure Solutions Architect positioning and provides a place for future infrastructure-as-code examples.
+  tags:
+    - Azure
+    - ARM
+    - PowerShell
+    - Bicep
+    - Infrastructure
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/azureResources
+
+- title: ChromeExt Launchboard Dashboard
+  subtitle: Chrome extension and desktop utility repo
+  repo: ChromeExt
+  status: Public GitHub repo
+  summary: Chrome new-tab launchboard with configurable links, tiles, tasks, notes, themes, weather, and read-only Google Calendar integration, plus small Python desktop utilities.
+  impact: Shows practical front-end product work outside the GIS stack, including browser extension storage, UI configuration, OAuth setup notes, and local utility tooling.
+  fit: Rounds out the portfolio with user-facing application delivery and small productivity tools.
+  tags:
+    - Chrome extension
+    - JavaScript
+    - UI
+    - Google Calendar
+    - Open-Meteo
+    - Python utilities
+  links:
+    - label: Repo
+      url: https://github.com/JosephDillard/ChromeExt
