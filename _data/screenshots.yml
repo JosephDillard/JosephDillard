@@ -98,6 +98,21 @@
 - title: MCP And Assistant Functions
   description: Map-aware assistant tooling that keeps the MCP boundary explicit and the analysis explainable.
   items:
+    - subtitle: Status Board Assistant
+      title: Map Assistant high-risk incident review
+      image: /assets/images/screenshots/map-assistant-high-risk-plan.png
+      alt: Screenshot of the Map Assistant planning and running a high-risk incident review on the Status Board map.
+      description: Turns a natural-language prompt into reviewed map actions that show incidents, zoom to high-risk events, and open the existing incident popup.
+    - subtitle: Status Board Assistant
+      title: Map Assistant reviewed incident draft
+      image: /assets/images/screenshots/map-assistant-incident-draft.png
+      alt: Screenshot of the Map Assistant staging a reviewed wildfire incident draft in the existing Create Incident form.
+      description: Parses a title and latitude/longitude from a prompt, fills the existing incident form, and leaves the analyst in control of saving the record.
+    - subtitle: Status Board Assistant
+      title: Map Assistant response support lookup
+      image: /assets/images/screenshots/map-assistant-support-lookup.png
+      alt: Screenshot of the Map Assistant running a response support lookup and opening nearby support results on the map.
+      description: Reuses the map's response-support workflow to find nearby OpenStreetMap support options around the selected incident context.
     - subtitle: Geospatial MCP Services
       title: Map-aware tool contract
       image: /assets/images/screenshots/mcp-tool-contract.png
