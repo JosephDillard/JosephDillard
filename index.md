@@ -98,10 +98,10 @@ body_class: home
   </div>
 </section>
 
-<section class="section section--visual" aria-labelledby="evidence-heading">
+<section class="section section--visual" aria-labelledby="architecture-heading">
   <div class="visual-copy">
-    <p class="eyebrow">Architecture Evidence</p>
-    <h2 id="evidence-heading">Development and Docker views of the system.</h2>
+    <p class="eyebrow">Architecture Views</p>
+    <h2 id="architecture-heading">Development and Docker views of the system.</h2>
     <p>The architecture page shows how the stack runs locally in development mode and how the Docker-backed services fit together when PostGIS, GeoServer, GeoAI, gateway, and MCP containers are enabled.</p>
     <div class="text-links">
       <a href="{{ '/architecture/' | relative_url }}">View architecture diagrams</a>

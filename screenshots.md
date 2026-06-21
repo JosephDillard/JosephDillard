@@ -1,20 +1,20 @@
 ---
 title: Screenshots
-description: Function-level screenshot evidence for Joseph C. Dillard's public geospatial, GeoAI, data gateway, MCP, and validation projects.
+description: Function-level screenshots for Joseph C. Dillard's public geospatial, GeoAI, data gateway, MCP, and validation projects.
 permalink: /screenshots/
 body_class: screenshots-page
 ---
 
 <section class="page-hero">
   <p class="eyebrow">Screenshots</p>
-  <h1>Function-level evidence from the geospatial project stack.</h1>
+  <h1>Function-level walkthrough of the geospatial project stack.</h1>
   <p>These screenshots show the companion project functions that matter most to a reviewer: operational map tools, GeoAI workflows, live data gateway events, MCP assistant tools, and ETL validation gates. Click any screenshot to open it full size in a new tab.</p>
 </section>
 
 {% for section in site.data.screenshots %}
   <section class="section screenshot-section{% if forloop.first %} section--no-top{% endif %}" aria-labelledby="screenshots-{{ forloop.index }}">
     <div class="screenshot-section__header">
-      <p class="eyebrow">Screenshot Evidence</p>
+      <p class="eyebrow">Screenshot Walkthrough</p>
       <h2 id="screenshots-{{ forloop.index }}">{{ section.title }}</h2>
       <p>{{ section.description }}</p>
     </div>

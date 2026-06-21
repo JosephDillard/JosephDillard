@@ -147,7 +147,7 @@
   repo: JosephDillard
   status: Public GitHub repo
   summary: Jekyll/GitHub Pages portfolio site for resume sections, project descriptions, screenshots, architecture diagrams, and recruiter-facing links.
-  impact: Gives hiring managers one place to see resume evidence, project screenshots, repository explanations, and how the geospatial stack fits together.
+  impact: Gives hiring managers one place to see resume highlights, project screenshots, repository explanations, and how the geospatial stack fits together.
   fit: Acts as the public documentation and navigation layer for the wider portfolio.
   tags:
     - GitHub Pages

@@ -39,6 +39,6 @@ Then open the local URL printed by Jekyll.
 - Keep `_data/projects.yml` aligned with the public companion repos whenever a
   README or project scope changes.
 - Keep `screenshots.md` and `assets/images/screenshots/` aligned with the
-  strongest current reviewer-facing evidence.
+  strongest current reviewer-facing screenshots.
 - Add a professional headshot or architecture diagram if desired.
 - Add specific target role titles and preferred work arrangements.

@@ -12,7 +12,7 @@ body_class: resume-page
   <div class="hero__actions">
     <a class="button button--primary" href="{{ site.resume.pdf | relative_url }}">Download V7 PDF</a>
     <a class="button button--secondary" href="mailto:{{ site.author.email }}">Email me</a>
-    <a class="button button--secondary" href="{{ '/projects/' | relative_url }}">View repo evidence</a>
+    <a class="button button--secondary" href="{{ '/projects/' | relative_url }}">View project work</a>
   </div>
 </section>
 
@@ -175,7 +175,7 @@ body_class: resume-page
     <p>Public reference from earlier mission-focused geospatial work, alongside this GitHub Pages portfolio and companion repositories.</p>
     <div class="text-links">
       <a href="https://www.dvidshub.net/news/195988/pacaf-utilizes-geobase-program">Read the article</a>
-      <a href="{{ '/projects/' | relative_url }}">View project evidence</a>
+      <a href="{{ '/projects/' | relative_url }}">View project work</a>
     </div>
   </div>
 </section>
