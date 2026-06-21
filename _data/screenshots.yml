@@ -1,12 +1,3 @@
-- title: Portfolio
-  description: Public-facing entry points that help a reviewer understand the project stack quickly.
-  items:
-    - subtitle: Portfolio Site
-      title: GitHub Pages portfolio
-      image: /assets/images/screenshots/portfolio-home.png
-      alt: Portfolio homepage with Enterprise GIS and Azure Solution Architect hero content.
-      description: Public landing page for resume, project stack, skills, and contact paths.
-
 - title: Operational Map Functions
   description: Status Board map capabilities that show the visible, reviewer-facing behavior of the stack.
   items:
@@ -35,6 +26,16 @@
       image: /assets/images/screenshots/status-board-map-tools-mgrs.png
       alt: Zoomed evidence screenshot of shared map tools and MGRS readout.
       description: Captures the common map tools, drawing controls, scale bar, and MGRS coordinate readout used for field-style workflows.
+    - subtitle: Status Board Function
+      title: GeoNames / Wikipedia nearby places
+      image: /assets/images/screenshots/status-board-wiki-search-function.png
+      alt: Evidence screenshot of the Status Board GeoNames and Wikipedia nearby places search function.
+      description: Activates map-click search for nearby GeoNames and Wikipedia places, then shows source links and zoom actions in a Nearby Places popup.
+    - subtitle: Status Board Function
+      title: Response support / POI lookup
+      image: /assets/images/screenshots/status-board-response-support-search.png
+      alt: Evidence screenshot of the Status Board response support and POI lookup function.
+      description: Finds nearby response-support points for a selected incident or clicked location, using OpenStreetMap lookup with a local fallback path.
     - subtitle: Feature Inspection
       title: Map popup and layer workflow
       image: /assets/images/screenshots/status-board-feature-popup.png
