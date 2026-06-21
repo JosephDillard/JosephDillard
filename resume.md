@@ -8,7 +8,7 @@ body_class: resume-page
 <section class="page-hero">
   <p class="eyebrow">Resume</p>
   <h1>Enterprise GIS Architect, Cloud Solution Architect, and Full-Stack GIS Developer.</h1>
-  <p>Enterprise GIS Architect, cloud/hybrid solution architect, and full-stack GIS developer with 25+ years of geospatial experience, 20+ years designing and operating Enterprise GIS platforms, and 9+ years of Java/GIS web development.</p>
+  <p>Enterprise GIS Architect, cloud/hybrid solution architect, and full-stack GIS developer with 25+ years of geospatial experience, 20+ years designing and operating Enterprise GIS platforms, and 11+ years of Java/GIS web development.</p>
   <div class="hero__actions">
     <a class="button button--primary" href="{{ site.resume.pdf | relative_url }}">Download V7 PDF</a>
     <a class="button button--secondary" href="mailto:{{ site.author.email }}">Email me</a>

@@ -36,7 +36,7 @@ body_class: home
       <span>Enterprise GIS architecture and administration</span>
     </article>
     <article class="metric-card">
-      <strong>9+ years</strong>
+      <strong>11+ years</strong>
       <span>Java and GIS web development</span>
     </article>
     <article class="metric-card">
