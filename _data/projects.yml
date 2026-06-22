@@ -4,7 +4,7 @@
   status: Public GitHub repo
   summary: Grails and MapLibre operational map for incidents, infrastructure, GeoAI outputs, response support, weather context, MGRS, and reviewed assistant map actions.
   impact: It works by running a Grails web app with a simple H2 default path, optional PostGIS/GeoServer integration for spatial services, and MapLibre for the browser map tools.
-  fit: This is the visible review surface where gateway refresh events, GeoAI output, incident data, support lookup, and assistant actions become something an analyst can inspect.
+  fit: This is the visible map review surface where gateway refresh events, GeoAI output, incident data, support lookup, and assistant actions become something an analyst can inspect.
   tags:
     - Grails
     - MapLibre
@@ -141,58 +141,3 @@
       url: https://github.com/JosephDillard/geospatial-mcp-services/tree/master/servers/incident_analyst
     - label: Status Board Architecture
       url: https://github.com/JosephDillard/geospatial-status-board/blob/master/docs/geospatial-architecture.md
-
-- title: JosephDillard Portfolio Site
-  subtitle: GitHub Pages resume and project hub
-  repo: JosephDillard
-  status: Public GitHub repo
-  summary: Jekyll/GitHub Pages portfolio site for resume sections, project descriptions, screenshots, architecture diagrams, and recruiter-facing links.
-  impact: Gives hiring managers one place to see resume highlights, project screenshots, repository explanations, and how the geospatial stack fits together.
-  fit: Acts as the public documentation and navigation layer for the wider portfolio.
-  tags:
-    - GitHub Pages
-    - Jekyll
-    - Resume
-    - Portfolio
-    - Documentation
-    - Screenshots
-  links:
-    - label: Site
-      url: https://josephdillard.github.io/JosephDillard/
-    - label: Repo
-      url: https://github.com/JosephDillard/JosephDillard
-
-- title: azureResources
-  subtitle: Azure infrastructure snippets and references
-  repo: azureResources
-  status: Public GitHub repo
-  summary: Azure ARM, PowerShell, and Bicep resource examples used as an infrastructure reference area.
-  impact: Supports the cloud and hybrid infrastructure side of the resume by keeping Azure deployment notes and snippets close to the portfolio.
-  fit: Complements the Azure Solutions Architect positioning and provides a place for future infrastructure-as-code examples.
-  tags:
-    - Azure
-    - ARM
-    - PowerShell
-    - Bicep
-    - Infrastructure
-  links:
-    - label: Repo
-      url: https://github.com/JosephDillard/azureResources
-
-- title: ChromeExt Launchboard Dashboard
-  subtitle: Chrome extension and desktop utility repo
-  repo: ChromeExt
-  status: Public GitHub repo
-  summary: Chrome new-tab launchboard with configurable links, tiles, tasks, notes, themes, weather, and read-only Google Calendar integration, plus small Python desktop utilities.
-  impact: Shows practical front-end product work outside the GIS stack, including browser extension storage, UI configuration, OAuth setup notes, and local utility tooling.
-  fit: Rounds out the portfolio with user-facing application delivery and small productivity tools.
-  tags:
-    - Chrome extension
-    - JavaScript
-    - UI
-    - Google Calendar
-    - Open-Meteo
-    - Python utilities
-  links:
-    - label: Repo
-      url: https://github.com/JosephDillard/ChromeExt

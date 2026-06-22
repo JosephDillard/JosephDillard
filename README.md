@@ -11,13 +11,13 @@ Architecture diagrams: [Development and Docker network views](https://josephdill
 
 ## Geospatial / GeoAI Project Stack
 
-I am building a connected geospatial and GeoAI project stack around a practical operational workflow: check incoming customer data, process imagery or vector data, load accepted layers into spatial services, refresh a live map, and let an analyst use map-aware assistant tools without hiding how the system works. Each repo can be reviewed by itself, but together they show a full path from data handoff to operational map review.
+I am building a connected geospatial and GeoAI project stack around a practical operational workflow: check incoming customer data, process imagery or vector data, load accepted layers into spatial services, refresh a live map, and let an analyst use map-aware assistant tools without hiding how the system works. Each repo can be used or extended by itself, but together they show a full path from data handoff to operational map use.
 
 Plain-English flow: the ETL toolkit checks files before they are trusted, the GeoAI platform can turn imagery into GIS-ready detections, the data gateway moves accepted data into PostGIS and announces refresh events, the Status Board displays the operational map through GeoServer/MapLibre, and the MCP/incident analyst projects add explainable map commands and location context.
 
 ### GeoAI Asset Detection Platform
 
-A Python-based GeoAI workflow platform for turning imagery into GIS-ready detection output. It is aimed at workflows such as road or asset detection, where a reviewer needs more than a model result: they need tiles, vectors, files, API status, and a path into PostGIS or a map.
+A Python-based GeoAI workflow platform for turning imagery into GIS-ready detection output. It is aimed at workflows such as road or asset detection, where a user or developer needs more than a model result: they need tiles, vectors, files, API status, and a path into PostGIS or a map.
 
 How it works: FastAPI exposes workflow endpoints, Python handles raster/vector processing, model steps can run through PyTorch/ONNX-style inference, and GeoPandas-style output can be written as GeoPackage or loaded into PostGIS. The basic flow is imagery input, tile/chip preparation, model inference, vectorization, export, then optional database load.
 
@@ -29,7 +29,7 @@ Keywords: GeoAI, computer vision, semantic segmentation, PostGIS, GeoPackage, CO
 
 ### Geospatial Status Board
 
-A Grails-based operational map and dashboard for incidents, infrastructure, GeoAI layers, response support, weather context, MGRS workflows, and assistant-driven map tasks. It is the place where the backend pieces become visible to an analyst or reviewer.
+A Grails-based operational map and dashboard for incidents, infrastructure, GeoAI layers, response support, weather context, MGRS workflows, and assistant-driven map tasks. It is the place where the backend pieces become visible to an analyst, operator, or developer.
 
 How it works: the app runs as a Grails web application, uses H2 for the simplest local development path, and can optionally connect to PostGIS and GeoServer. MapLibre renders the browser map, GeoServer can provide WFS/WMS layers, and the app includes tools for layer control, MGRS, drawing, incident plotting, GeoAI requests, Wiki/GeoNames lookup, OpenStreetMap response support, and a reviewed Map Assistant prompt flow.
 
@@ -77,7 +77,7 @@ Keywords: Python, GeoPandas, Pyogrio, PostGIS, GeoPackage, Shapefile, GeoTIFF, C
 
 ### Map-to-AI Incident Analyst
 
-A reviewer-friendly MapLibre incident review and bridge demo for northern New Mexico. It focuses on analyst workflows such as viewing incidents, understanding why an incident is high risk, searching response support, working with MGRS coordinates, and packaging map context for assistant analysis.
+A user-facing MapLibre incident review and bridge demo for northern New Mexico. It focuses on analyst workflows such as viewing incidents, understanding why an incident is high risk, searching response support, working with MGRS coordinates, and packaging map context for assistant analysis.
 
 How it works: the map uses MapLibre for the browser view, incident data is scored with deterministic rules such as severity, significant-event flag, operational impact, and nearby critical assets, and support lookups use OpenStreetMap-style POI results with local fallback behavior. The assistant boundary is intentionally reviewed: natural-language prompts become structured, allow-listed actions before anything changes on the map.
 

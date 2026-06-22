@@ -67,7 +67,7 @@ body_class: resume-page
   <div class="section__header">
     <p class="eyebrow">Technical Skills / Keyword Matrix</p>
     <h2 id="skills-heading">Enterprise GIS, cloud, data, development, integration, and delivery.</h2>
-    <p>This section mirrors the resume keyword matrix so the site is useful to both human reviewers and keyword-driven screening.</p>
+    <p>This section mirrors the resume keyword matrix so the site is useful to both human readers and keyword-driven screening.</p>
   </div>
   <div class="skill-grid">
     {% for skill_group in site.data.skills %}

@@ -10,7 +10,7 @@ body_class: architecture-page
   <h1>How the geospatial portfolio stack runs together.</h1>
   <p>The repos tell one system story in plain English: incoming data is checked, imagery can be processed into GIS-ready detections, accepted layers are loaded into spatial services, map clients are refreshed, and assistant tools operate through reviewed, explainable map actions.</p>
   <div class="hero__actions">
-    <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Review repos</a>
+    <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Explore repos</a>
     <a class="button button--secondary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
   </div>
 </section>
@@ -19,7 +19,7 @@ body_class: architecture-page
   <div class="section__header">
     <p class="eyebrow">Development Mode</p>
     <h2 id="dev-mode-heading">Host-run app with optional integration services.</h2>
-    <p>This is the easiest review path. The Status Board runs from the Grails project on the host and uses H2 by default. PostGIS, GeoServer, GeoAI, Data Gateway, OpenClaw, and MCP services are optional services that are started only when that part of the workflow is being tested.</p>
+    <p>This is the easiest local development path. The Status Board runs from the Grails project on the host and uses H2 by default. PostGIS, GeoServer, GeoAI, Data Gateway, OpenClaw, and MCP services are optional services that are started only when that part of the workflow is being tested.</p>
   </div>
   <figure class="diagram-card">
     <a href="{{ '/assets/images/diagrams/development-network.svg' | relative_url }}" target="_blank" rel="noopener">
@@ -33,7 +33,7 @@ body_class: architecture-page
   <div class="section__header">
     <p class="eyebrow">Docker Mode</p>
     <h2 id="docker-mode-heading">Containerized service stacks with published local ports.</h2>
-    <p>The Docker story is service-oriented: the Status Board compose stack owns PostGIS, GeoServer, optional GeoAI, and OpenClaw gateway services; the Data Gateway compose stack owns its API, worker, and database; and MCP services run as Docker-ready stdio tools. This keeps each repo reviewable while showing how the pieces can be composed.</p>
+    <p>The Docker story is service-oriented: the Status Board compose stack owns PostGIS, GeoServer, optional GeoAI, and OpenClaw gateway services; the Data Gateway compose stack owns its API, worker, and database; and MCP services run as Docker-ready stdio tools. This keeps each repo independently runnable while showing how the pieces can be composed.</p>
   </div>
   <figure class="diagram-card">
     <a href="{{ '/assets/images/diagrams/docker-network.svg' | relative_url }}" target="_blank" rel="noopener">

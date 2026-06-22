@@ -13,7 +13,7 @@ body_class: home
     <div class="hero__actions" aria-label="Primary actions">
       <a class="button button--primary" href="{{ site.resume.pdf | relative_url }}">Download resume</a>
       <a class="button button--secondary" href="{{ '/architecture/' | relative_url }}">View architecture</a>
-      <a class="button button--secondary" href="{{ '/projects/' | relative_url }}">Review repos</a>
+      <a class="button button--secondary" href="{{ '/projects/' | relative_url }}">Explore repos</a>
       <a class="button button--secondary" href="mailto:{{ site.author.email }}">Contact me</a>
     </div>
   </div>

@@ -1,5 +1,5 @@
 - title: Operational Map Functions
-  description: Status Board map capabilities that show the visible, reviewer-facing behavior of the stack.
+  description: Status Board map capabilities that show the visible, user-facing behavior of the stack.
   items:
     - subtitle: Geospatial Status Board
       title: Operational map with GeoAI layers
@@ -15,7 +15,7 @@
       title: GeoAI detections overlay
       image: /assets/images/screenshots/status-board-geoai-detections-overlay.png
       alt: Zoomed screenshot of GeoAI detections and a COG footprint on the map.
-      description: Shows detected features and source footprints as map layers so model output can be reviewed spatially.
+      description: Shows detected features and source footprints as map layers so model output can be inspected spatially.
     - subtitle: Status Board Function
       title: Layer drawer and feature counts
       image: /assets/images/screenshots/status-board-layer-control-drawer.png
@@ -40,7 +40,7 @@
       title: Map popup and layer workflow
       image: /assets/images/screenshots/status-board-feature-popup.png
       alt: Status Board map showing a feature popup beside the layers panel.
-      description: Feature details, configured layer categories, and reviewer-friendly map inspection on the same screen.
+      description: Feature details, configured layer categories, and user-facing map inspection on the same screen.
     - subtitle: Incident Review
       title: Incident and weather context
       image: /assets/images/screenshots/status-board-incident-review.png
@@ -74,7 +74,7 @@
       title: Training export page
       image: /assets/images/screenshots/geoai-training-export.png
       alt: GeoAI training export page with training package controls.
-      description: No-login web page for preparing training packages and reviewer-friendly model data handoffs.
+      description: No-login web page for preparing training packages and reusable model data handoffs.
 
 - title: Data Gateway Functions
   description: API and event-control screenshots for moving validated geospatial data into live map workflows.
@@ -161,4 +161,4 @@
       title: Batch readiness summary
       image: /assets/images/screenshots/etl-batch-summary-report.png
       alt: Geospatial ETL Validation Toolkit batch readiness summary screenshot.
-      description: Generates a batch-level handoff summary so larger customer data deliveries can be reviewed at a glance.
+      description: Generates a batch-level handoff summary so larger customer data deliveries can be inspected at a glance.
