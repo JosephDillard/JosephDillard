@@ -1,95 +1,142 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
-  <title id="title">Development mode network diagram for the geospatial portfolio stack</title>
-  <desc id="desc">Shows host-run development services, optional local GIS infrastructure, and how the portfolio repositories connect.</desc>
+  <title id="title">Development mode workflow for the geospatial portfolio stack</title>
+  <desc id="desc">Shows the required local Status Board path, optional data and GeoAI services, and optional assistant services used during development.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#315f9f"/>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#15803d"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
     </marker>
     <style>
       .bg { fill: #f7fbff; }
-      .panel { fill: #ffffff; stroke: #c8d8e7; stroke-width: 2; rx: 18; }
-      .node { fill: #f6f8f7; stroke: #9fb6c8; stroke-width: 2; rx: 14; }
-      .main { fill: #eaf3f1; stroke: #2f7d64; }
-      .data { fill: #edf4ff; stroke: #315f9f; }
-      .warn { fill: #fff5e8; stroke: #b76e24; }
-      .assist { fill: #f2edff; stroke: #7a4fc2; }
-      .title { fill: #132221; font: 700 34px Arial, sans-serif; }
-      .subtitle { fill: #52615f; font: 18px Arial, sans-serif; }
-      .label { fill: #132221; font: 700 20px Arial, sans-serif; }
-      .small { fill: #52615f; font: 15px Arial, sans-serif; }
-      .port { fill: #215744; font: 700 14px Arial, sans-serif; }
-      .line { fill: none; stroke: #315f9f; stroke-width: 3; marker-end: url(#arrow); }
-      .softline { fill: none; stroke: #7d93a6; stroke-width: 2.5; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+      .title { fill: #102033; font: 700 34px Arial, sans-serif; }
+      .subtitle { fill: #526071; font: 18px Arial, sans-serif; }
+      .lane { fill: #ffffff; stroke: #c8d8e7; stroke-width: 2; rx: 18; }
+      .lane-title { fill: #334155; font: 700 16px Arial, sans-serif; text-transform: uppercase; }
+      .node { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; rx: 14; }
+      .required { fill: #eaf3ff; stroke: #2563eb; }
+      .data { fill: #ecfdf5; stroke: #15803d; }
+      .assistant { fill: #f3e8ff; stroke: #7c3aed; }
+      .store { fill: #fff7ed; stroke: #c2410c; }
+      .label { fill: #102033; font: 700 20px Arial, sans-serif; }
+      .body { fill: #475569; font: 15px Arial, sans-serif; }
+      .port { fill: #0f766e; font: 700 14px Arial, sans-serif; }
+      .step { fill: #ffffff; stroke-width: 0; }
+      .step-text { fill: #ffffff; font: 700 14px Arial, sans-serif; }
+      .required-line { fill: none; stroke: #2563eb; stroke-width: 4; marker-end: url(#arrow-blue); }
+      .data-line { fill: none; stroke: #15803d; stroke-width: 3; stroke-dasharray: 8 7; marker-end: url(#arrow-green); }
+      .assistant-line { fill: none; stroke: #7c3aed; stroke-width: 3; stroke-dasharray: 6 6; marker-end: url(#arrow-purple); }
+      .note { fill: #334155; font: 15px Arial, sans-serif; }
+      .legend-label { fill: #334155; font: 14px Arial, sans-serif; }
     </style>
   </defs>
 
   <rect class="bg" width="1400" height="900"/>
-  <text class="title" x="60" y="62">Development Mode: Host-Run Services</text>
-  <text class="subtitle" x="60" y="92">Default local path keeps the Status Board on H2, while optional PostGIS, GeoServer, GeoAI, gateway, and MCP services run beside it as needed.</text>
+  <text class="title" x="50" y="58">Development Mode: What Runs Locally</text>
+  <text class="subtitle" x="50" y="90">Start with the host-run Status Board. Add PostGIS, GeoServer, GeoAI, Data Gateway, OpenClaw, or MCP services only when testing that workflow.</text>
 
-  <rect class="panel" x="45" y="125" width="1310" height="715"/>
-  <text class="label" x="75" y="170">Windows host / developer workstation</text>
-  <text class="small" x="75" y="196">Repos live under C:\Users\josep\OneDrive\Documents\GitHub</text>
+  <rect class="lane" x="40" y="125" width="1320" height="225"/>
+  <text class="lane-title" x="65" y="160">Required first-run path</text>
 
-  <rect class="node main" x="80" y="245" width="250" height="95"/>
-  <text class="label" x="105" y="282">Reviewer Browser</text>
-  <text class="small" x="105" y="308">GitHub Pages, app UIs, API docs</text>
+  <rect class="node required" x="75" y="190" width="270" height="115"/>
+  <text class="label" x="100" y="225">Browser / Reviewer</text>
+  <text class="body" x="100" y="252">Opens GitHub Pages, API docs,</text>
+  <text class="body" x="100" y="274">or the local app UI.</text>
 
-  <rect class="node data" x="410" y="225" width="310" height="125"/>
-  <text class="label" x="438" y="262">Geospatial Status Board</text>
-  <text class="small" x="438" y="290">Grails + MapLibre shared map</text>
-  <text class="port" x="438" y="320">localhost:18088/GeoStatusBoard</text>
+  <rect class="node required" x="430" y="175" width="340" height="145"/>
+  <text class="label" x="455" y="210">Status Board App</text>
+  <text class="body" x="455" y="238">Grails bootRun on the host</text>
+  <text class="body" x="455" y="260">MapLibre renders map tools</text>
+  <text class="port" x="455" y="290">localhost:18088/GeoStatusBoard</text>
 
-  <rect class="node data" x="790" y="225" width="255" height="125"/>
-  <text class="label" x="818" y="262">H2 Dev Database</text>
-  <text class="small" x="818" y="290">Default no-Docker path</text>
-  <text class="port" x="818" y="320">embedded in app</text>
+  <rect class="node required" x="855" y="190" width="255" height="115"/>
+  <text class="label" x="880" y="225">H2 Dev Data</text>
+  <text class="body" x="880" y="252">Default embedded database</text>
+  <text class="body" x="880" y="274">for fast local review.</text>
 
-  <rect class="node data" x="410" y="405" width="310" height="125"/>
-  <text class="label" x="438" y="442">GeoAI Platform</text>
-  <text class="small" x="438" y="470">FastAPI workflow and training UI</text>
-  <text class="port" x="438" y="500">localhost:8000</text>
+  <path class="required-line" d="M345 248 C375 248 395 248 430 248"/>
+  <path class="required-line" d="M770 248 C800 248 825 248 855 248"/>
+  <circle cx="390" cy="248" r="16" fill="#2563eb"/>
+  <text class="step-text" x="386" y="253">1</text>
+  <circle cx="815" cy="248" r="16" fill="#2563eb"/>
+  <text class="step-text" x="811" y="253">2</text>
 
-  <rect class="node data" x="785" y="405" width="310" height="125"/>
-  <text class="label" x="813" y="442">Data Gateway API</text>
-  <text class="small" x="813" y="470">Dataset jobs + SignalR refresh</text>
-  <text class="port" x="813" y="500">localhost:7070</text>
+  <rect class="lane" x="40" y="385" width="820" height="340"/>
+  <text class="lane-title" x="65" y="420">Optional data and GeoAI workflow</text>
 
-  <rect class="node assist" x="410" y="585" width="310" height="125"/>
-  <text class="label" x="438" y="622">Incident Analyst Bridge</text>
-  <text class="small" x="438" y="650">Focused map review and bridge routes</text>
-  <text class="port" x="438" y="680">127.0.0.1:8775/incident-analyst</text>
+  <rect class="node data" x="75" y="455" width="260" height="115"/>
+  <text class="label" x="100" y="490">ETL Toolkit</text>
+  <text class="body" x="100" y="518">Checks GeoJSON, CSV,</text>
+  <text class="body" x="100" y="540">GeoPackage, Shapefile, COG.</text>
 
-  <rect class="node assist" x="785" y="585" width="310" height="125"/>
-  <text class="label" x="813" y="622">MCP Services</text>
-  <text class="small" x="813" y="650">GeoNames/Wikipedia + incident tools</text>
-  <text class="port" x="813" y="680">stdio tools launched by host</text>
+  <rect class="node data" x="420" y="455" width="270" height="115"/>
+  <text class="label" x="445" y="490">Data Gateway</text>
+  <text class="body" x="445" y="518">Registers datasets, loads data,</text>
+  <text class="body" x="445" y="540">broadcasts refresh events.</text>
+  <text class="port" x="445" y="562">localhost:7070</text>
 
-  <rect class="node warn" x="1125" y="245" width="185" height="105"/>
-  <text class="label" x="1152" y="282">PostGIS</text>
-  <text class="small" x="1152" y="310">Optional local GIS</text>
-  <text class="port" x="1152" y="335">localhost:5432</text>
+  <rect class="node data" x="75" y="610" width="260" height="90"/>
+  <text class="label" x="100" y="646">GeoAI Platform</text>
+  <text class="body" x="100" y="674">Imagery to vector detections.</text>
+  <text class="port" x="100" y="694">localhost:8000</text>
 
-  <rect class="node warn" x="1125" y="405" width="185" height="105"/>
-  <text class="label" x="1152" y="442">GeoServer</text>
-  <text class="small" x="1152" y="470">Optional WFS/WMS</text>
-  <text class="port" x="1152" y="495">localhost:8081</text>
+  <rect class="node store" x="590" y="610" width="225" height="90"/>
+  <text class="label" x="615" y="646">PostGIS</text>
+  <text class="body" x="615" y="674">Spatial tables for services.</text>
+  <text class="port" x="615" y="694">localhost:5432</text>
 
-  <rect class="node warn" x="1125" y="585" width="185" height="105"/>
-  <text class="label" x="1152" y="622">ETL Toolkit</text>
-  <text class="small" x="1152" y="650">CLI validation + reports</text>
-  <text class="port" x="1152" y="675">local Python command</text>
+  <rect class="node store" x="590" y="385" width="225" height="90"/>
+  <text class="label" x="615" y="421">GeoServer</text>
+  <text class="body" x="615" y="449">Publishes WFS/WMS layers.</text>
+  <text class="port" x="615" y="469">localhost:8081</text>
 
-  <path class="line" d="M330 292 C360 292 375 292 410 292"/>
-  <path class="line" d="M720 292 C748 292 760 292 790 292"/>
-  <path class="softline" d="M720 320 C880 365 980 292 1125 292"/>
-  <path class="softline" d="M1045 468 C1090 468 1095 468 1125 468"/>
-  <path class="softline" d="M720 468 C742 468 760 468 785 468"/>
-  <path class="softline" d="M720 648 C742 648 760 648 785 648"/>
-  <path class="softline" d="M1095 648 C1110 648 1115 648 1125 648"/>
-  <path class="softline" d="M940 530 C940 555 940 565 940 585"/>
-  <path class="softline" d="M565 350 C565 370 565 385 565 405"/>
-  <path class="softline" d="M565 530 C565 555 565 565 565 585"/>
+  <path class="data-line" d="M335 512 C365 512 390 512 420 512"/>
+  <path class="data-line" d="M335 655 C410 655 500 655 590 655"/>
+  <path class="data-line" d="M690 512 C725 540 750 580 703 610"/>
+  <path class="data-line" d="M703 610 C700 560 700 520 703 475"/>
+  <path class="data-line" d="M590 430 C515 390 470 340 595 320"/>
+  <circle cx="375" cy="512" r="16" fill="#15803d"/>
+  <text class="step-text" x="371" y="517">3</text>
+  <circle cx="703" cy="562" r="16" fill="#15803d"/>
+  <text class="step-text" x="699" y="567">4</text>
 
-  <text class="small" x="75" y="805">Main idea: the local dev path is easy to start and review. Docker-backed services are optional unless testing PostGIS, GeoServer, GeoAI containers, or gateway integration.</text>
+  <rect class="lane" x="900" y="385" width="460" height="340"/>
+  <text class="lane-title" x="925" y="420">Optional assistant workflow</text>
+
+  <rect class="node assistant" x="940" y="455" width="175" height="105"/>
+  <text class="label" x="965" y="490">OpenClaw</text>
+  <text class="body" x="965" y="518">Gateway health and</text>
+  <text class="body" x="965" y="540">future model calls.</text>
+
+  <rect class="node assistant" x="1150" y="455" width="175" height="105"/>
+  <text class="label" x="1175" y="490">MCP Tools</text>
+  <text class="body" x="1175" y="518">GeoNames, Wiki,</text>
+  <text class="body" x="1175" y="540">incident analysis.</text>
+
+  <rect class="node assistant" x="940" y="610" width="385" height="90"/>
+  <text class="label" x="965" y="646">Map Assistant Panel</text>
+  <text class="body" x="965" y="674">Prompt becomes reviewed, allow-listed map actions.</text>
+  <text class="port" x="965" y="694">/GeoStatusBoard/assistant</text>
+
+  <path class="assistant-line" d="M770 290 C905 325 1020 375 1027 455"/>
+  <path class="assistant-line" d="M770 290 C1020 320 1215 365 1237 455"/>
+  <path class="assistant-line" d="M600 320 C690 420 810 600 940 655"/>
+  <path class="assistant-line" d="M1027 560 C1027 580 1040 600 1085 610"/>
+  <path class="assistant-line" d="M1237 560 C1237 580 1220 600 1180 610"/>
+  <circle cx="885" cy="337" r="16" fill="#7c3aed"/>
+  <text class="step-text" x="881" y="342">5</text>
+
+  <rect class="lane" x="40" y="760" width="1320" height="92"/>
+  <text class="note" x="65" y="792">How to read this diagram:</text>
+  <line x1="240" y1="787" x2="300" y2="787" class="required-line"/>
+  <text class="legend-label" x="318" y="792">solid blue is the default app path</text>
+  <line x1="555" y1="787" x2="615" y2="787" class="data-line"/>
+  <text class="legend-label" x="635" y="792">dashed green is optional data or GeoAI integration</text>
+  <line x1="970" y1="787" x2="1030" y2="787" class="assistant-line"/>
+  <text class="legend-label" x="1050" y="792">dashed purple is optional assistant integration</text>
+  <text class="note" x="65" y="825">The important idea is separation: the app can run simply with H2, and each optional service can be added only when reviewing that specific workflow.</text>
 </svg>

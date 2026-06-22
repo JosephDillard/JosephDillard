@@ -8,7 +8,7 @@ body_class: projects-page
 <section class="page-hero">
   <p class="eyebrow">Projects</p>
   <h1>All portfolio repos, explained as one geospatial system.</h1>
-  <p>These repositories are designed to be reviewed both individually and as a connected stack: validation, GeoAI processing, data gateway ingestion, PostGIS/GeoServer publication, operational mapping, MCP assistant tools, and public documentation.</p>
+  <p>These repositories are designed to be reviewed both individually and as a connected stack. The plain-English system flow is: validate data, process or enrich it, load accepted layers, refresh the operational map, and use assistant tools that explain their map actions.</p>
   <div class="hero__actions">
     <a class="button button--primary" href="{{ '/architecture/' | relative_url }}">View architecture diagrams</a>
     <a class="button button--secondary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
@@ -19,7 +19,7 @@ body_class: projects-page
   <div class="section__header">
     <p class="eyebrow">System Story</p>
     <h2 id="stack-flow-heading">From incoming data to operational map review.</h2>
-    <p>The core stack is intentionally practical: validate data, create spatial intelligence, load and notify, visualize, then enrich map context through assistant tools.</p>
+    <p>The core stack is intentionally practical. Files are checked before load, GeoAI output becomes GIS data, the gateway tracks and notifies changes, the Status Board visualizes layers, and MCP/assistant tools add controlled context around map clicks and incidents.</p>
   </div>
   <div class="flow-strip" aria-label="Repository flow">
     <span>ETL validation</span>

@@ -8,7 +8,7 @@ body_class: architecture-page
 <section class="page-hero">
   <p class="eyebrow">Architecture</p>
   <h1>How the geospatial portfolio stack runs together.</h1>
-  <p>The repos are meant to tell one system story: validate incoming geospatial data, process or enrich it, load it into spatial services, refresh operational maps, and expose map-aware assistant tools with clear integration boundaries.</p>
+  <p>The repos tell one system story in plain English: incoming data is checked, imagery can be processed into GIS-ready detections, accepted layers are loaded into spatial services, map clients are refreshed, and assistant tools operate through reviewed, explainable map actions.</p>
   <div class="hero__actions">
     <a class="button button--primary" href="{{ '/projects/' | relative_url }}">Review repos</a>
     <a class="button button--secondary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
@@ -18,14 +18,14 @@ body_class: architecture-page
 <section class="section section--no-top" aria-labelledby="dev-mode-heading">
   <div class="section__header">
     <p class="eyebrow">Development Mode</p>
-    <h2 id="dev-mode-heading">Host-run services with optional GIS infrastructure.</h2>
-    <p>This is the easiest review path. The Status Board can run from the Grails project with H2 by default, while GeoAI, the Data Gateway, the incident bridge, MCP tools, PostGIS, and GeoServer can be started only when their integration path is being tested.</p>
+    <h2 id="dev-mode-heading">Host-run app with optional integration services.</h2>
+    <p>This is the easiest review path. The Status Board runs from the Grails project on the host and uses H2 by default. PostGIS, GeoServer, GeoAI, Data Gateway, OpenClaw, and MCP services are optional services that are started only when that part of the workflow is being tested.</p>
   </div>
   <figure class="diagram-card">
     <a href="{{ '/assets/images/diagrams/development-network.svg' | relative_url }}" target="_blank" rel="noopener">
       <img src="{{ '/assets/images/diagrams/development-network.svg' | relative_url }}" alt="Development mode network diagram for the geospatial project stack.">
     </a>
-    <figcaption>Development mode keeps the first-run path simple and makes optional services visible instead of mandatory.</figcaption>
+    <figcaption>Development mode separates the required first-run path from the optional services used for spatial publication, GeoAI processing, data refresh, and assistant tooling.</figcaption>
   </figure>
 </section>
 
@@ -33,7 +33,7 @@ body_class: architecture-page
   <div class="section__header">
     <p class="eyebrow">Docker Mode</p>
     <h2 id="docker-mode-heading">Containerized service stacks with published local ports.</h2>
-    <p>The Docker story is service-oriented: the Status Board compose stack owns PostGIS, GeoServer, and optional GeoAI; the Data Gateway compose stack owns its API, worker, and database; and MCP services run as Docker-ready stdio servers. This keeps each repo reviewable while showing how the pieces can be composed.</p>
+    <p>The Docker story is service-oriented: the Status Board compose stack owns PostGIS, GeoServer, optional GeoAI, and OpenClaw gateway services; the Data Gateway compose stack owns its API, worker, and database; and MCP services run as Docker-ready stdio tools. This keeps each repo reviewable while showing how the pieces can be composed.</p>
   </div>
   <figure class="diagram-card">
     <a href="{{ '/assets/images/diagrams/docker-network.svg' | relative_url }}" target="_blank" rel="noopener">
@@ -46,8 +46,8 @@ body_class: architecture-page
 <section class="section section--split" aria-labelledby="flow-heading">
   <div>
     <p class="eyebrow">System Flow</p>
-    <h2 id="flow-heading">What the stack demonstrates.</h2>
-    <p>The goal is not just to show isolated repos. The portfolio shows the engineering judgment needed to move from customer data to a functioning operational map with explainable assistant support.</p>
+    <h2 id="flow-heading">How the stack works.</h2>
+    <p>The goal is not to show isolated repos. The portfolio explains the decisions needed to move from customer data to a functioning operational map: data checks first, spatial services second, live map review third, and assistant support only through clear action boundaries.</p>
   </div>
   <div class="focus-list">
     <span>Validate and score incoming GeoJSON, CSV, GeoPackage, Shapefile, and GeoTIFF data.</span>

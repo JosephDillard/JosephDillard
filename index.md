@@ -71,9 +71,9 @@ body_class: home
 
 <section class="section" aria-labelledby="project-heading">
   <div class="section__header">
-    <p class="eyebrow">Public Proof</p>
+    <p class="eyebrow">Project Stack</p>
     <h2 id="project-heading">A connected geospatial project stack.</h2>
-    <p>The public repos show the same system thinking as my resume: data readiness, PostGIS-backed services, operational maps, GeoAI outputs, live refresh events, and map-aware assistant tools.</p>
+    <p>The public repos explain the same system thinking as my resume: how data is checked, how GeoAI output becomes GIS-ready, how PostGIS-backed layers refresh, and how map-aware assistant tools stay reviewed and explainable.</p>
   </div>
 
   <div class="project-grid">
@@ -102,7 +102,7 @@ body_class: home
   <div class="visual-copy">
     <p class="eyebrow">Architecture Views</p>
     <h2 id="architecture-heading">Development and Docker views of the system.</h2>
-    <p>The architecture page shows how the stack runs locally in development mode and how the Docker-backed services fit together when PostGIS, GeoServer, GeoAI, gateway, and MCP containers are enabled.</p>
+    <p>The architecture page explains what runs on the host, what is optional, which ports matter, and how data, map services, GeoAI, gateway events, and assistant tools move through the local development stack.</p>
     <div class="text-links">
       <a href="{{ '/architecture/' | relative_url }}">View architecture diagrams</a>
       <a href="{{ '/screenshots/' | relative_url }}">View function screenshots</a>
@@ -111,6 +111,6 @@ body_class: home
   </div>
   <figure class="image-frame">
     <img src="{{ '/assets/images/diagrams/development-network.svg' | relative_url }}" alt="Development mode network diagram for the geospatial project stack.">
-    <figcaption>Development-mode architecture showing host-run services and optional local GIS infrastructure.</figcaption>
+    <figcaption>Development-mode flow showing the host-run Status Board and the optional services it can call during integration testing.</figcaption>
   </figure>
 </section>
