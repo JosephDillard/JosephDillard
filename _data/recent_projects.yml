@@ -1,0 +1,91 @@
+- id: arcgis-capacity-calculator
+  title: ArcGIS Capacity Calculator
+  subtitle: Capacity planning and Windows measurements
+  visibility: Private
+  repo: arcgis-capacity-calculator
+  summary: An offline desktop and command-line tool for estimating the resources an ArcGIS workload may need, from one service to several concurrent services on the same machine group.
+  details: It compares an Esri-aligned worksheet with a resource model inspired by Google's Non-Abstract Large System Design (NALSD). Saved scenarios make workload growth, headroom, and machine-loss assumptions explicit and reproducible.
+  capabilities:
+    - Compare CPU, memory, dedicated service instances, network bandwidth, disk I/O, and retained storage.
+    - Capture local CPU, RAM, ArcSOC, disk, and network measurements directly in a Windows PowerShell window.
+    - Export scenario inputs and reports while keeping missing measurements visibly incomplete.
+  scope: Planning estimates require representative load testing; the formulas are project assumptions, not an official Esri or Google sizing recommendation.
+  tags:
+    - Python / Tk
+    - PowerShell
+    - ArcGIS
+    - NALSD
+  links:
+    - label: Private repository · access required
+      url: https://github.com/JosephDillard/arcgis-capacity-calculator
+
+- id: osint-source-library
+  title: OSINT Source Library
+  subtitle: Source discovery for security and situational awareness
+  visibility: Public
+  repo: osint-source-library
+  summary: A curated library that helps analysts find public data, feeds, and geospatial references for physical security, protective services, business continuity, and government situational awareness.
+  details: Source descriptions explain what each provider offers, where it applies, how to access it, and what limitations or licensing terms need attention. A city directory adds 150 profiles across all 50 states with local agency and utility references.
+  capabilities:
+    - Browse sources covering hazards, transportation, utilities, public safety, and geographic context.
+    - Compare access requirements, geographic coverage, evidence links, and review dates.
+    - Search machine-readable catalogs and generate consistent Markdown reference pages with Python tools.
+  scope: This is a research and source-discovery library. It does not continuously collect or monitor the listed feeds, and each provider retains its own data terms.
+  tags:
+    - OSINT
+    - Python
+    - JSON catalogs
+    - Source provenance
+  links:
+    - label: GitHub repository
+      url: https://github.com/JosephDillard/osint-source-library
+    - label: Browse source library
+      url: https://github.com/JosephDillard/osint-source-library/blob/main/LIBRARY.md
+    - label: City directory
+      url: https://github.com/JosephDillard/osint-source-library/blob/main/CITIES.md
+
+- id: open-geoint-watch
+  title: Open GEOINT Watch
+  subtitle: Hazard observations, change detection, and analyst briefs
+  visibility: Public
+  repo: open-geoint-watch
+  summary: A standalone geospatial intelligence prototype for understanding what changed in a monitored area, which facilities may be exposed, and what source evidence supports the assessment.
+  details: It combines USGS earthquake observations and National Weather Service alerts with spatial screening, archived snapshots, and a local map interface. Analysts can compare observations over time and export a Markdown intelligence brief with source context.
+  capabilities:
+    - Collect and normalize two public feeds through an explicit refresh command.
+    - Compare snapshots and distinguish new, updated, stale, and unresolved observations.
+    - Explore a labeled synthetic demonstration with fictional facilities and separate live-feed history.
+  scope: The current pilot covers the southwestern United States. Potential exposure is distinct from confirmed disruption; collection is manual and the interface is a local prototype.
+  tags:
+    - Python
+    - SQLite
+    - Shapely
+    - MapLibre
+  links:
+    - label: GitHub repository
+      url: https://github.com/JosephDillard/open-geoint-watch
+    - label: Demonstration guide
+      url: https://github.com/JosephDillard/open-geoint-watch/blob/main/docs/demo-script.md
+    - label: Methodology
+      url: https://github.com/JosephDillard/open-geoint-watch/blob/main/docs/methodology.md
+
+- id: ai-brain
+  title: Atlas / AI Brain
+  subtitle: Local knowledge retrieval with an editable Obsidian vault
+  visibility: Private
+  repo: ai-brain
+  summary: A personal knowledge system that turns curated Markdown notes into searchable technical memory, with answers that point back to the source notes.
+  details: Obsidian provides the editable knowledge layer, while Atlas adds a Python command-line tool and a local browser interface for retrieval and note capture. The project separates durable knowledge, assistant identity, and task-specific prompts.
+  capabilities:
+    - Organize technical knowledge, troubleshooting notes, architecture decisions, and reusable workflows.
+    - Index and search local notes, retrieve answers with citations, and save useful summaries for later review.
+    - Use local keyword retrieval by default, with optional API-backed capabilities only when explicitly enabled.
+  scope: This is a private personal workspace. This overview describes the software; the vault contents and source code require repository access.
+  tags:
+    - Python
+    - Obsidian
+    - Markdown
+    - Local retrieval
+  links:
+    - label: Private repository · access required
+      url: https://github.com/JosephDillard/ai-brain

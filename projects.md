@@ -7,9 +7,10 @@ body_class: projects-page
 
 <section class="page-hero">
   <p class="eyebrow">Projects</p>
-  <h1>All portfolio repos, explained as one geospatial system.</h1>
+  <h1>The core geospatial project stack.</h1>
   <p>These repositories are documented as a connected stack for people who may use, run, extend, or maintain the system. The plain-English system flow is: validate data, process or enrich it, load accepted layers, refresh the operational map, and use assistant tools that explain their map actions.</p>
   <div class="hero__actions">
+    <a class="button button--secondary" href="{{ '/recent-projects/' | relative_url }}">Explore four recent projects</a>
     <a class="button button--primary" href="{{ '/architecture/' | relative_url }}">View architecture diagrams</a>
     <a class="button button--secondary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
   </div>

@@ -45,6 +45,12 @@ body_class: sitemap-page
     </article>
     <article class="project-row">
       <div>
+        <h3><a href="{{ '/recent-projects/' | relative_url }}">Recent Projects</a></h3>
+        <p>ArcGIS Capacity Calculator, OSINT Source Library, Open GEOINT Watch, and Atlas / AI Brain, with public overviews and clearly labeled repository access.</p>
+      </div>
+    </article>
+    <article class="project-row">
+      <div>
         <h3><a href="{{ '/architecture/' | relative_url }}">Architecture</a></h3>
         <p>Development, Docker, and Azure Kubernetes architecture diagrams for the geospatial project stack.</p>
       </div>

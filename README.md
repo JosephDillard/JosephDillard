@@ -8,6 +8,8 @@ Screenshot documentation: [Project screenshots](https://josephdillard.github.io/
 
 Architecture diagrams: [Development and Docker network views](https://josephdillard.github.io/JosephDillard/architecture/)
 
+Recent additions: [Four recent projects](https://josephdillard.github.io/JosephDillard/recent-projects/) — ArcGIS Capacity Calculator, OSINT Source Library, Open GEOINT Watch, and Atlas / AI Brain. The page includes public descriptions and labels the two private repository links as requiring access.
+
 [Link to Download My Resume: GIS Solution Architect 2026](https://github.com/JosephDillard/JosephDillard/raw/refs/heads/main/Joseph_Dillard_Enterprise_GIS_Architect_Resume_V7.pdf)
 
 
