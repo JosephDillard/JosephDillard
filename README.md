@@ -1,3 +1,5 @@
+# Joseph C. Dillard — Geospatial Portfolio
+
 [Portfolio Home: Joseph C. Dillard Geospatial Project Stack](https://josephdillard.github.io/JosephDillard/)
 
 This repository now includes a GitHub Pages / Jekyll portfolio site for job search visibility, with pages for resume sections, project/repo explanations, architecture diagrams, function screenshots, skills, and contact information. Existing resume files and profile README content remain in place.
@@ -232,3 +234,7 @@ Keywords: MapLibre, MCP bridge, incident review, MGRS, OpenStreetMap, response s
 JosephDillard/JosephDillard is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+## Repository guidance and copyright
+
+Repository-specific coding and validation instructions are in [AGENTS.md](AGENTS.md). See [COPYRIGHT.md](COPYRIGHT.md) for ownership, licensing scope, and third-party notices. Original Joseph Dillard material is reserved unless a more specific existing license applies; this repository does not grant a general open-source license.
