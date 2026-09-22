@@ -1,20 +1,22 @@
 - id: arcgis-capacity-calculator
-  title: ArcGIS Capacity Calculator
-  subtitle: Capacity planning and Windows measurements
+  title: ArcGIS Enterprise Capacity Planning Model
+  subtitle: Estimate, measure, revise, and validate
   visibility: Private
   repo: arcgis-capacity-calculator
-  summary: An offline desktop and command-line tool for estimating the resources an ArcGIS workload may need, from one service to several concurrent services on the same machine group.
-  details: It compares an Esri-aligned worksheet with a resource model inspired by Google's Non-Abstract Large System Design (NALSD). Saved scenarios make workload growth, headroom, and machine-loss assumptions explicit and reproducible.
+  summary: An ArcGIS Enterprise capacity-planning model based on Google NALSD, back-of-the-napkin estimation, Little’s Law, and measured RED/USE performance data.
+  details: It starts with an estimate, makes assumptions explicit, gathers representative measurements, and recalculates after observed values are entered. The offline calculator compares an Esri-aligned instance worksheet with NALSD-inspired resource constraints; saved scenarios and reports preserve inputs and formulas for review.
   capabilities:
     - Compare CPU, memory, dedicated service instances, network bandwidth, disk I/O, and retained storage.
     - Capture local CPU, RAM, ArcSOC, disk, and network measurements directly in a Windows PowerShell window.
-    - Export scenario inputs and reports while keeping missing measurements visibly incomplete.
-  scope: Planning estimates require representative load testing; the formulas are project assumptions, not an official Esri or Google sizing recommendation.
+    - Combine resource captures with service rate, errors, and duration evidence; manually revise scenarios and compare reports.
+  scope: PowerShell covers resource measurements; service errors, latency distributions, resource queues, and device errors require separate monitoring. Estimates require representative load testing; targets and formulas are project assumptions, not official Esri or Google sizing recommendations.
   tags:
     - Python / Tk
     - PowerShell
     - ArcGIS
     - NALSD
+    - Little’s Law
+    - RED / USE
   links:
     - label: Private repository · access required
       url: https://github.com/JosephDillard/arcgis-capacity-calculator
